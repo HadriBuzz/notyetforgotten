@@ -1,0 +1,703 @@
+{
+  "events": [
+    {
+      "id": "gardner-1990",
+      "date": "1990-03-18",
+      "title": "Le vol au musée Isabella Stewart Gardner",
+      "cause": "Vol au musée — Boston, 1990",
+      "location": "Boston, États-Unis",
+      "description": "Le 18 mars 1990, treize pièces sont dérobées au musée Isabella Stewart Gardner, à Boston, par deux hommes déguisés en policiers : cinq peintures, cinq œuvres de Degas sur papier, une eau-forte de Rembrandt et deux objets en bronze. Les treize pièces sont réunies ici.",
+      "sources": [
+        {
+          "label": "Le récit du musée",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ]
+    },
+    {
+      "id": "tarascon-1945",
+      "date": "1945",
+      "title": "Une disparition pendant la Seconde Guerre mondiale",
+      "cause": "Guerre — destruction présumée",
+      "location": "Allemagne · Collection du musée de Magdebourg",
+      "description": "La toile a été mise à l’abri dans une mine de sel pendant la Seconde Guerre mondiale. Sa trace se perd en 1945 et elle est présumée détruite. Les circonstances exactes restent incertaines ; cette fiche ne suppose pas que d’autres œuvres aient disparu au même moment.",
+      "sources": [
+        {
+          "label": "Musée Ōtsuka — article sur la reproduction",
+          "url": "https://o-museum.or.jp/en/pages/622/"
+        }
+      ]
+    }
+  ],
+  "artworks": [
+    {
+      "id": "rembrandt-tempete",
+      "disappearanceEventId": "gardner-1990",
+      "title": "La Tempête sur la mer de Galilée",
+      "artist": "Rembrandt van Rijn",
+      "date": "1633",
+      "medium": "Huile sur toile",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobée en 1990",
+      "status": "Dérobée le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "Une tempête. Puis le silence.",
+      "story": [
+        "Un bateau, des vagues, une lumière qui fend le ciel. En 1633, Rembrandt peint cette scène biblique : c’est sa seule marine peinte connue.",
+        "Le 18 mars 1990, des voleurs déguisés en policiers pénètrent dans le musée Isabella Stewart Gardner, à Boston. Treize œuvres sont emportées. Cette toile est découpée hors de son cadre.",
+        "Les cadres vides demeurent dans le musée. Ils gardent la place des œuvres disparues."
+      ],
+      "image": {
+        "src": "assets/oeuvres/rembrandt-tempete/miniature.jpg",
+        "largeSrc": "assets/oeuvres/rembrandt-tempete/large.webp",
+        "alt": "Un bateau à voile dans une mer agitée, éclairé par une percée de lumière : La Tempête sur la mer de Galilée de Rembrandt.",
+        "width": 804,
+        "height": 1000,
+        "credit": "Reproduction · Wikimedia Commons · Domaine public",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rembrandt_Christ_in_the_Storm_on_the_Lake_of_Galilee.jpg",
+        "previewLargeSrc": "assets/oeuvres/rembrandt-tempete/apercu.webp"
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/10953"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ],
+      "dimensions": "160 × 128 cm",
+      "valuation": {
+        "minimum": 120000000,
+        "maximum": 150000000,
+        "currency": "USD",
+        "type": "editorial-range",
+        "origin": "project-owner"
+      },
+      "artistId": "rembrandt-van-rijn"
+    },
+    {
+      "id": "vermeer-concert",
+      "disappearanceEventId": "gardner-1990",
+      "title": "Le Concert",
+      "artist": "Johannes Vermeer",
+      "date": "1663–1666",
+      "medium": "Huile sur toile",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobée en 1990",
+      "status": "Dérobée le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "Une musique que l’on imagine.",
+      "story": [
+        "Deux femmes et un homme se tiennent autour d’un clavecin. L’une joue, l’autre chante une partition à la main, tandis que l’homme, vu de dos, joue du luth.",
+        "Isabella Stewart Gardner acquiert Le Concert à Paris en 1892. Près d’un siècle plus tard, l’œuvre fait partie des treize pièces emportées lors du vol du musée, le 18 mars 1990.",
+        "La reproduction permet encore de s’attarder sur cette réunion silencieuse, alors que la toile originale reste recherchée."
+      ],
+      "image": {
+        "src": "assets/oeuvres/vermeer-concert/miniature.jpg",
+        "largeSrc": "assets/oeuvres/vermeer-concert/large.webp",
+        "alt": "Deux femmes et un homme réunis autour d’un clavecin : Le Concert de Johannes Vermeer.",
+        "width": 891,
+        "height": 1000,
+        "credit": "Reproduction · Wikimedia Commons · Domaine public",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vermeer_The_Concert.jpg",
+        "previewLargeSrc": "assets/oeuvres/vermeer-concert/apercu.webp"
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/10966"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        },
+        {
+          "label": "Description sur Wikipédia",
+          "url": "https://fr.wikipedia.org/wiki/Le_Concert_(Vermeer)"
+        }
+      ],
+      "dimensions": "72,5 × 64,7 cm",
+      "valuation": {
+        "minimum": 170000000,
+        "maximum": 250000000,
+        "currency": "USD",
+        "type": "editorial-range",
+        "origin": "project-owner"
+      },
+      "artistId": "johannes-vermeer"
+    },
+    {
+      "id": "manet-tortoni",
+      "disappearanceEventId": "gardner-1990",
+      "title": "Chez Tortoni",
+      "artist": "Édouard Manet",
+      "date": "Vers 1875",
+      "medium": "Huile sur toile",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobée en 1990",
+      "status": "Dérobée le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "Un regard, au détour d’un café.",
+      "story": [
+        "Un homme en haut-de-forme interrompt son geste et nous regarde. Devant lui, un carnet et un verre : Manet saisit un instant de la vie d’un café parisien.",
+        "Acquis pour Isabella Stewart Gardner en 1922, ce petit tableau est dérobé en mars 1990. C’est la seule œuvre emportée depuis le rez-de-chaussée du musée cette nuit-là.",
+        "Les voleurs abandonnent son cadre dans le bureau du directeur de la sécurité. L’image conserve, elle, ce face-à-face avec un inconnu."
+      ],
+      "image": {
+        "src": "assets/oeuvres/manet-tortoni/miniature.jpg",
+        "largeSrc": "assets/oeuvres/manet-tortoni/large.webp",
+        "alt": "Un homme portant un haut-de-forme regarde le spectateur, assis devant un carnet dans un café : Chez Tortoni de Manet.",
+        "width": 1000,
+        "height": 753,
+        "credit": "Reproduction · Wikimedia Commons · Domaine public",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Édouard_Manet,_Chez_Tortoni.jpg",
+        "previewLargeSrc": "assets/oeuvres/manet-tortoni/apercu.webp"
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/10735"
+        }
+      ],
+      "dimensions": "26 × 34 cm",
+      "inventoryNumber": "P3s5",
+      "valuation": null,
+      "artistId": "edouard-manet"
+    },
+    {
+      "id": "van-gogh-tarascon",
+      "disappearanceEventId": "tarascon-1945",
+      "title": "Le Peintre sur la route de Tarascon",
+      "artist": "Vincent van Gogh",
+      "date": "1888",
+      "medium": "Huile sur toile",
+      "collection": "Ancienne collection du Kaiser-Friedrich-Museum, Magdebourg",
+      "shortStatus": "Disparue en 1945",
+      "status": "Disparue en 1945, présumée détruite",
+      "archive": "Archive · Magdebourg · 1945",
+      "headline": "Sur le chemin, une ombre demeure.",
+      "story": [
+        "Sur une route ensoleillée, un peintre avance avec son matériel. Sa silhouette et son ombre se détachent sur les couleurs du paysage. Van Gogh réalise cette œuvre en 1888.",
+        "La toile appartient au musée de Magdebourg lorsqu’elle est mise à l’abri dans une mine de sel pendant la Seconde Guerre mondiale. Sa trace se perd en 1945 ; elle est généralement considérée comme détruite.",
+        "Des reproductions antérieures à sa disparition nous permettent encore de rencontrer ce peintre en marche. Le sort exact de l’original reste incertain."
+      ],
+      "image": {
+        "src": "assets/oeuvres/van-gogh-tarascon/miniature.jpg",
+        "largeSrc": "assets/oeuvres/van-gogh-tarascon/large.webp",
+        "alt": "Un peintre avec son matériel marche sur une route bordée d’arbres et projette une longue ombre : Le Peintre sur la route de Tarascon de Van Gogh.",
+        "width": 898,
+        "height": 1000,
+        "credit": "Reproduction d’archive · Wikimedia Commons · Domaine public",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vincent_Van_Gogh_0013.jpg",
+        "previewLargeSrc": "assets/oeuvres/van-gogh-tarascon/apercu.webp"
+      },
+      "sources": [
+        {
+          "label": "Musée Ōtsuka — article sur la reproduction",
+          "url": "https://o-museum.or.jp/en/pages/622/"
+        },
+        {
+          "label": "Dimensions — catalogue de Princeton",
+          "url": "https://static.artmuseum.princeton.edu/artists-in-motion/downloads/ArtistsInMotion_English.pdf"
+        }
+      ],
+      "dimensions": "48 × 44 cm",
+      "valuation": null,
+      "artistId": "vincent-van-gogh"
+    },
+    {
+      "id": "rembrandt-dame-gentilhomme",
+      "disappearanceEventId": "gardner-1990",
+      "title": "Une dame et un gentilhomme en noir",
+      "artist": "Rembrandt van Rijn",
+      "date": "1633",
+      "medium": "Huile sur toile",
+      "dimensions": "131,6 × 109 cm",
+      "inventoryNumber": "P21s9",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobée en 1990",
+      "status": "Dérobée le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "Deux présences dans la pénombre.",
+      "story": [
+        "Dans un intérieur sombre, un homme se tient debout près d’une femme assise. Les vêtements noirs laissent ressortir les visages et les cols blancs.",
+        "Peint en 1633, ce double portrait est découpé hors de son cadre pendant le vol du 18 mars 1990, dans la Dutch Room.",
+        "Le cadre conservé au musée rappelle la place de cette toile disparue."
+      ],
+      "image": {
+        "src": "assets/oeuvres/rembrandt-dame-gentilhomme/miniature.jpg",
+        "largeSrc": "assets/oeuvres/rembrandt-dame-gentilhomme/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/rembrandt-dame-gentilhomme/apercu.webp",
+        "alt": "Un homme debout et une femme assise, vêtus de noir : Une dame et un gentilhomme en noir de Rembrandt.",
+        "width": 833,
+        "height": 1000,
+        "credit": "Reproduction · Isabella Stewart Gardner Museum",
+        "sourceUrl": "https://www.gardnermuseum.org/experience/collection/10954",
+        "originalSourceUrl": "https://www.gardnermuseum.org/sites/default/files/images/art/23/06/009162.jpg",
+        "largeWidth": 1666,
+        "largeHeight": 2000
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/10954"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ],
+      "valuation": null,
+      "artistId": "rembrandt-van-rijn"
+    },
+    {
+      "id": "rembrandt-autoportrait",
+      "disappearanceEventId": "gardner-1990",
+      "title": "Portrait de l’artiste en jeune homme",
+      "artist": "Rembrandt van Rijn",
+      "date": "Vers 1633",
+      "medium": "Eau-forte",
+      "dimensions": "4,5 × 5 cm",
+      "inventoryNumber": "P21n9",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobée en 1990",
+      "status": "Dérobée le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "Un visage dans quelques centimètres.",
+      "story": [
+        "Une casquette, des boucles et un regard tourné vers nous : Rembrandt se représente dans cette minuscule eau-forte.",
+        "Acquise par Isabella Stewart Gardner en 1886, elle est la première œuvre de Rembrandt entrée dans sa collection.",
+        "Le 18 mars 1990, les voleurs l’emportent depuis la Dutch Room. Malgré ses 4,5 × 5 cm, elle fait partie des treize pièces disparues."
+      ],
+      "image": {
+        "src": "assets/oeuvres/rembrandt-autoportrait/miniature.jpg",
+        "largeSrc": "assets/oeuvres/rembrandt-autoportrait/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/rembrandt-autoportrait/apercu.webp",
+        "alt": "Portrait gravé de Rembrandt jeune, portant une casquette et de longs cheveux bouclés.",
+        "width": 844,
+        "height": 1000,
+        "credit": "Reproduction · Isabella Stewart Gardner Museum",
+        "sourceUrl": "https://www.gardnermuseum.org/experience/collection/14482",
+        "originalSourceUrl": "https://www.gardnermuseum.org/sites/default/files/images/art/25/06/140663_0.jpg",
+        "largeWidth": 1687,
+        "largeHeight": 2000
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/14482"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ],
+      "valuation": null,
+      "artistId": "rembrandt-van-rijn"
+    },
+    {
+      "id": "flinck-obelisque",
+      "disappearanceEventId": "gardner-1990",
+      "title": "Paysage avec un obélisque",
+      "artist": "Govaert Flinck",
+      "date": "1638",
+      "medium": "Huile sur panneau de chêne",
+      "dimensions": "54,5 × 71 cm",
+      "inventoryNumber": "P21w24",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobée en 1990",
+      "status": "Dérobée le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "Lumière sur un monument",
+      "story": [
+        "Sous un ciel chargé, un obélisque se dresse dans un paysage d’arbres, d’eau et de voyageurs minuscules.",
+        "Longtemps attribuée à Rembrandt, cette peinture de 1638 est reconnue dans les années 1980 comme une œuvre de son élève Govaert Flinck.",
+        "Elle est retirée de son cadre dans la Dutch Room pendant le vol du 18 mars 1990."
+      ],
+      "image": {
+        "src": "assets/oeuvres/flinck-obelisque/miniature.jpg",
+        "largeSrc": "assets/oeuvres/flinck-obelisque/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/flinck-obelisque/apercu.webp",
+        "alt": "Un paysage sombre traversé par une rivière, avec des arbres et un obélisque éclairé : Paysage avec un obélisque de Flinck.",
+        "width": 1000,
+        "height": 770,
+        "credit": "Reproduction · Isabella Stewart Gardner Museum",
+        "sourceUrl": "https://www.gardnermuseum.org/experience/collection/10956",
+        "originalSourceUrl": "https://www.gardnermuseum.org/sites/default/files/images/art/25/06/140664_0.jpg",
+        "largeWidth": 2000,
+        "largeHeight": 1539
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/10956"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ],
+      "valuation": null,
+      "artistId": "govaert-flinck"
+    },
+    {
+      "id": "degas-sortie-pesage",
+      "disappearanceEventId": "gardner-1990",
+      "title": "La Sortie du pesage",
+      "artist": "Edgar Degas",
+      "date": "XIXe siècle",
+      "medium": "Aquarelle et crayon sur papier",
+      "dimensions": "10,5 × 16 cm",
+      "inventoryNumber": "3.1.o.94",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobée en 1990",
+      "status": "Dérobée le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "L’instant avant la piste.",
+      "story": [
+        "Un jockey coiffé de rouge monte un cheval vu de dos. Un homme conduit l’animal vers la piste : Degas retient un instant des préparatifs de la course.",
+        "Le musée date cette petite aquarelle du XIXe siècle, sans préciser d’année. Isabella Stewart Gardner l’achète à Paris en 1919.",
+        "Elle fait partie des cinq œuvres de Degas emportées dans la Short Gallery le 18 mars 1990."
+      ],
+      "image": {
+        "src": "assets/oeuvres/degas-sortie-pesage/miniature.jpg",
+        "largeSrc": "assets/oeuvres/degas-sortie-pesage/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/degas-sortie-pesage/apercu.webp",
+        "alt": "Un jockey sur un cheval vu de dos, conduit par un homme vers la piste : La Sortie du pesage de Degas.",
+        "width": 1000,
+        "height": 643,
+        "credit": "Reproduction · Isabella Stewart Gardner Museum",
+        "sourceUrl": "https://www.gardnermuseum.org/experience/collection/14028",
+        "originalSourceUrl": "https://www.gardnermuseum.org/sites/default/files/images/art/25/06/140658_0.jpg",
+        "largeWidth": 2000,
+        "largeHeight": 1285
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/14028"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ],
+      "valuation": null,
+      "artistId": "edgar-degas"
+    },
+    {
+      "id": "degas-cortege-florence",
+      "disappearanceEventId": "gardner-1990",
+      "title": "Cortège sur une route aux environs de Florence",
+      "artist": "Edgar Degas",
+      "date": "1857–1860",
+      "medium": "Crayon et lavis sépia sur papier",
+      "dimensions": "15,6 × 20,6 cm",
+      "inventoryNumber": "3.1.o.95",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobée en 1990",
+      "status": "Dérobée le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "Des silhouettes suivent la route.",
+      "story": [
+        "Une route claire traverse un paysage au lavis sépia. Des personnages et une voiture à cheval avancent dans ce cortège dessiné par Degas entre 1857 et 1860.",
+        "Isabella Stewart Gardner acquiert cette feuille à Paris en 1919, lors d’une vente de l’atelier de l’artiste.",
+        "Elle est dérobée dans la Short Gallery avec quatre autres œuvres de Degas, le 18 mars 1990."
+      ],
+      "image": {
+        "src": "assets/oeuvres/degas-cortege-florence/miniature.jpg",
+        "largeSrc": "assets/oeuvres/degas-cortege-florence/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/degas-cortege-florence/apercu.webp",
+        "alt": "Un cortège de silhouettes et une voiture à cheval sur une route, dessinés au lavis sépia par Degas.",
+        "width": 1000,
+        "height": 771,
+        "credit": "Reproduction · Isabella Stewart Gardner Museum",
+        "sourceUrl": "https://www.gardnermuseum.org/experience/collection/14029",
+        "originalSourceUrl": "https://www.gardnermuseum.org/sites/default/files/images/art/25/06/140659_0.jpg",
+        "largeWidth": 2000,
+        "largeHeight": 1541
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/14029"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ],
+      "valuation": null,
+      "artistId": "edgar-degas"
+    },
+    {
+      "id": "degas-trois-jockeys",
+      "disappearanceEventId": "gardner-1990",
+      "title": "Trois jockeys à cheval",
+      "artist": "Edgar Degas",
+      "date": "Vers 1885–1888",
+      "medium": "Encre noire, lavis et pigments à l’huile sur papier brun",
+      "dimensions": "30,5 × 24 cm",
+      "inventoryNumber": "3.1.o.93",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobée en 1990",
+      "status": "Dérobée le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "Le mouvement cherche sa forme.",
+      "story": [
+        "Un jockey et sa monture dominent la feuille. Deux autres cavaliers, plus petits et dessinés à l’envers dans le bas, révèlent le travail d’étude de Degas.",
+        "Réalisée vers 1885–1888, cette œuvre mêle encre, lavis colorés et pigments à l’huile sur du papier brun.",
+        "Acquise en 1919, elle est l’une des cinq œuvres de Degas volées dans la Short Gallery le 18 mars 1990."
+      ],
+      "image": {
+        "src": "assets/oeuvres/degas-trois-jockeys/miniature.jpg",
+        "largeSrc": "assets/oeuvres/degas-trois-jockeys/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/degas-trois-jockeys/apercu.webp",
+        "alt": "Étude de jockeys sur papier brun : un grand cavalier de profil et deux autres dessinés à l’envers dans le bas.",
+        "width": 801,
+        "height": 1000,
+        "credit": "Reproduction · Isabella Stewart Gardner Museum",
+        "sourceUrl": "https://www.gardnermuseum.org/experience/collection/10749",
+        "originalSourceUrl": "https://www.gardnermuseum.org/sites/default/files/images/art/25/06/140657_0.jpg",
+        "largeWidth": 1602,
+        "largeHeight": 2000
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/10749"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ],
+      "valuation": null,
+      "artistId": "edgar-degas"
+    },
+    {
+      "id": "degas-programme-96",
+      "disappearanceEventId": "gardner-1990",
+      "title": "Étude pour le programme de la soirée artistique du 15 juin 1884 (Galerie Ponsin)",
+      "artist": "Edgar Degas",
+      "date": "1884",
+      "medium": "Pierre noire sur papier",
+      "dimensions": "24,6 × 31,4 cm",
+      "inventoryNumber": "3.1.o.96",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobée en 1990",
+      "status": "Dérobée le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "Une soirée esquissée sur le papier.",
+      "story": [
+        "Danseurs, instruments et silhouettes entourent un espace couvert de traits évoquant du texte. Degas prépare le programme d’une soirée artistique à la galerie Ponsin, en 1884.",
+        "Cette feuille porte le numéro 3.1.o.96. Elle se distingue de l’autre étude du même programme, également conservée au musée.",
+        "Les deux dessins, acquis ensemble en 1919, sont emportés dans la Short Gallery le 18 mars 1990."
+      ],
+      "image": {
+        "src": "assets/oeuvres/degas-programme-96/miniature.jpg",
+        "largeSrc": "assets/oeuvres/degas-programme-96/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/degas-programme-96/apercu.webp",
+        "alt": "Étude 3.1.o.96 de Degas pour le programme Ponsin : danseurs, instruments et grand espace marqué de traits verticaux.",
+        "width": 1000,
+        "height": 764,
+        "credit": "Reproduction · Isabella Stewart Gardner Museum",
+        "sourceUrl": "https://www.gardnermuseum.org/experience/collection/14030",
+        "originalSourceUrl": "https://www.gardnermuseum.org/sites/default/files/images/art/25/06/140660_0.jpg",
+        "largeWidth": 1502,
+        "largeHeight": 1148
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/14030"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ],
+      "valuation": null,
+      "artistId": "edgar-degas"
+    },
+    {
+      "id": "degas-programme-97",
+      "disappearanceEventId": "gardner-1990",
+      "title": "Étude pour le programme de la soirée artistique du 15 juin 1884 (Galerie Ponsin)",
+      "artist": "Edgar Degas",
+      "date": "1884",
+      "medium": "Pierre noire sur papier",
+      "dimensions": "26,6 × 37,6 cm",
+      "inventoryNumber": "3.1.o.97",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobée en 1990",
+      "status": "Dérobée le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "Le même projet, une autre feuille.",
+      "story": [
+        "Une danseuse, des instruments et des personnages composent cette autre étude pour la soirée de la galerie Ponsin en 1884. Un grand rectangle reste presque vide dans le bas à droite.",
+        "Cataloguée 3.1.o.97, cette feuille est distincte de l’étude 3.1.o.96 : leurs dimensions et certains détails du dessin diffèrent.",
+        "Acquise avec l’autre étude en 1919, elle disparaît également lors du vol du 18 mars 1990, dans la Short Gallery."
+      ],
+      "image": {
+        "src": "assets/oeuvres/degas-programme-97/miniature.jpg",
+        "largeSrc": "assets/oeuvres/degas-programme-97/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/degas-programme-97/apercu.webp",
+        "alt": "Étude 3.1.o.97 de Degas pour le programme Ponsin : danseuse, instruments et grand rectangle presque vide en bas à droite.",
+        "width": 1000,
+        "height": 754,
+        "credit": "Reproduction · Isabella Stewart Gardner Museum",
+        "sourceUrl": "https://www.gardnermuseum.org/experience/collection/14031",
+        "originalSourceUrl": "https://www.gardnermuseum.org/sites/default/files/images/art/25/06/140661_0.jpg",
+        "largeWidth": 2000,
+        "largeHeight": 1508
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/14031"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ],
+      "valuation": null,
+      "artistId": "edgar-degas"
+    },
+    {
+      "id": "gu-bronze",
+      "disappearanceEventId": "gardner-1990",
+      "title": "Gu",
+      "artist": "Chine · dynastie Shang",
+      "date": "XIIe siècle av. J.-C.",
+      "medium": "Bronze",
+      "dimensions": "26,5 × 15,6 cm",
+      "inventoryNumber": "M21s29",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobé en 1990",
+      "status": "Dérobé le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "Un vase ancien, une absence récente.",
+      "story": [
+        "Ce vase rituel en bronze présente une taille resserrée, une ouverture évasée et des motifs géométriques. Il date du XIIe siècle avant notre ère, sous la dynastie Shang.",
+        "Ce type de récipient servait aux élites Shang à présenter des offrandes aux ancêtres. Isabella Stewart Gardner acquiert ce gu en 1922.",
+        "Posé dans la Dutch Room, il est emporté le 18 mars 1990. Le vol concerne aussi cette pièce ancienne, au-delà des peintures et dessins."
+      ],
+      "image": {
+        "src": "assets/oeuvres/gu-bronze/miniature.jpg",
+        "largeSrc": "assets/oeuvres/gu-bronze/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/gu-bronze/apercu.webp",
+        "alt": "Un gu chinois en bronze, à ouverture évasée et taille resserrée, décoré de motifs géométriques.",
+        "width": 782,
+        "height": 1000,
+        "credit": "Reproduction · Isabella Stewart Gardner Museum",
+        "sourceUrl": "https://www.gardnermuseum.org/experience/collection/13393",
+        "originalSourceUrl": "https://www.gardnermuseum.org/sites/default/files/images/art/25/07/140662_0.jpg",
+        "largeWidth": 1565,
+        "largeHeight": 2000
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/13393"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ],
+      "valuation": null,
+      "artistId": "chine-shang"
+    },
+    {
+      "id": "aigle-imperial",
+      "disappearanceEventId": "gardner-1990",
+      "title": "Aigle de hampe",
+      "artist": "D’après Antoine-Denis Chaudet et Pierre-Philippe Thomire",
+      "date": "1813–1814",
+      "medium": "Bronze doré",
+      "dimensions": "Hauteur : 25,4 cm",
+      "inventoryNumber": "T17s1.a",
+      "collection": "Isabella Stewart Gardner Museum, Boston",
+      "shortStatus": "Dérobé en 1990",
+      "status": "Dérobé le 18 mars 1990",
+      "archive": "Archive · Boston · 18 mars 1990",
+      "headline": "L’emblème détaché du drapeau.",
+      "story": [
+        "Un aigle aux ailes déployées surmonte un socle marqué du chiffre 1. Ce bronze doré couronnait le drapeau du 1er régiment de grenadiers à pied de la Garde impériale de Napoléon.",
+        "Daté de 1813–1814 et réalisé d’après Chaudet et Thomire, il entre dans la collection avec le drapeau en 1880.",
+        "Le 18 mars 1990, les voleurs emportent l’aigle depuis la Short Gallery. Le drapeau reste au musée ; la photographie d’archive montre les deux avant leur séparation."
+      ],
+      "image": {
+        "src": "assets/oeuvres/aigle-imperial/miniature.jpg",
+        "largeSrc": "assets/oeuvres/aigle-imperial/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/aigle-imperial/apercu.webp",
+        "alt": "Photographie d’archive en noir et blanc : l’aigle doré au sommet d’un drapeau ; seul l’aigle a été volé.",
+        "width": 646,
+        "height": 1000,
+        "credit": "Photographie d’archive · Isabella Stewart Gardner Museum",
+        "sourceUrl": "https://www.gardnermuseum.org/experience/collection/17723",
+        "originalSourceUrl": "https://www.gardnermuseum.org/sites/default/files/images/art/26/01/140665_0.jpg",
+        "largeWidth": 1293,
+        "largeHeight": 2000
+      },
+      "sources": [
+        {
+          "label": "Notice du musée",
+          "url": "https://www.gardnermuseum.org/experience/collection/17723"
+        },
+        {
+          "label": "Histoire du vol",
+          "url": "https://www.gardnermuseum.org/about/theft"
+        }
+      ],
+      "valuation": null,
+      "artistId": "d-apres-chaudet-thomire"
+    }
+  ],
+  "artists": [
+    {
+      "id": "rembrandt-van-rijn",
+      "name": "Rembrandt van Rijn",
+      "kind": "artist"
+    },
+    {
+      "id": "johannes-vermeer",
+      "name": "Johannes Vermeer",
+      "kind": "artist"
+    },
+    {
+      "id": "edouard-manet",
+      "name": "Édouard Manet",
+      "kind": "artist"
+    },
+    {
+      "id": "vincent-van-gogh",
+      "name": "Vincent van Gogh",
+      "kind": "artist"
+    },
+    {
+      "id": "govaert-flinck",
+      "name": "Govaert Flinck",
+      "kind": "artist"
+    },
+    {
+      "id": "edgar-degas",
+      "name": "Edgar Degas",
+      "kind": "artist"
+    },
+    {
+      "id": "chine-shang",
+      "name": "Chine · dynastie Shang",
+      "kind": "origin"
+    },
+    {
+      "id": "d-apres-chaudet-thomire",
+      "name": "D’après Antoine-Denis Chaudet et Pierre-Philippe Thomire",
+      "kind": "after"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2ec">
+  <meta name="description" content="Not Yet Forgotten (NYF). Découvrez les œuvres d’art disparues et les histoires qu’elles nous ont laissées. Pour que la mémoire reste.">
+  <title>Not Yet Forgotten (NYF) — Pour que la mémoire reste</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="js/app.js" defer></script>
+  <script src="js/bootstrap.js" defer></script>
+</head>
+<body>
+  <div id="nyf-design" aria-label="Not Yet Forgotten (NYF)">
+    <div class="nyf-page">
+      <header class="nyf-header">
+        <button class="nyf-brand" type="button" data-action="home" data-i18n-aria="brandHome" aria-label="Not Yet Forgotten (NYF), accueil">
+          <span class="nyf-symbol" aria-hidden="true"></span>
+          <span class="nyf-wordmark"><span class="nyf-wordmark-line">Not Yet</span><br><span class="nyf-wordmark-line">Forgotten</span> <span class="nyf-initials">(NYF)</span></span>
+        </button>
+        <nav data-i18n-aria="mainNavigation" aria-label="Navigation principale">
+          <button class="nyf-nav" type="button" data-action="visit" data-i18n="explore" disabled>Explorer</button>
+          <button class="nyf-nav" type="button" data-action="about" data-i18n="about">Le projet</button>
+          <button class="nyf-language" type="button" data-action="language" data-i18n-aria="switchLanguage" aria-label="Switch to English" lang="en" disabled>EN</button>
+        </nav>
+      </header>
+      <main>
+        <p class="nyf-load-error" data-load-error role="alert" hidden></p>
+        <noscript>Activez JavaScript pour découvrir les œuvres et parcourir leurs histoires.</noscript>
+        <div data-nyf-view="home">
+          <section class="nyf-hero" data-i18n-aria="homeSection" aria-label="Entrée de la galerie">
+            <div class="nyf-copy">
+              <p class="nyf-eyebrow" data-i18n="tagline">Pour que la mémoire reste</p>
+              <h1><span data-i18n="homeTitleFirst">L’art parfois disparaît.</span><br><span data-i18n="homeTitleSecond">Reste</span><br><em data-i18n="homeTitleLast">Leur mémoire.</em></h1>
+              <p class="nyf-description"><span data-i18n="homeDescriptionFirst">Dérobées, détruites, égarées.</span><br><span data-i18n="homeDescriptionLast">Partez à la rencontre des œuvres disparues. Certaines ressurgiront peut-être, d’autres sont perdues à jamais, mais toutes s’accrochent à nos mémoires.</span></p>
+              <button class="nyf-primary" type="button" data-action="visit" disabled><span data-i18n="startVisit">Commencer la visite</span> <span aria-hidden="true">↗</span></button>
+              <p class="nyf-note" data-i18n="visitNote">Une œuvre. Une histoire. À votre rythme.</p>
+            </div>
+            <figure class="nyf-work" data-featured hidden>
+              <div class="nyf-art-row">
+                <button class="nyf-art-button" type="button" data-action="zoom" data-featured-zoom>
+                  <img data-featured-image decoding="async" alt="">
+                </button>
+                <span class="nyf-side" data-featured-archive></span>
+              </div>
+              <figcaption>
+                <div class="nyf-caption-top"><strong data-featured-artist></strong><span class="nyf-state" data-featured-status></span></div>
+                <p class="nyf-art-name" data-featured-title></p>
+                <p class="nyf-caption-small" data-featured-caption></p>
+              </figcaption>
+            </figure>
+          </section>
+        </div>
+        <div data-nyf-view="work" hidden>
+          <div class="nyf-work-browser">
+            <nav class="nyf-visit-nav" data-i18n-aria="artworkNavigation" aria-label="Naviguer entre les œuvres">
+              <button class="nyf-page-arrow" type="button" data-action="previous" data-i18n-aria="previousArtwork" aria-label="Œuvre précédente" disabled><span aria-hidden="true">←</span><span class="nyf-arrow-label" data-i18n="previousArtwork">Œuvre précédente</span></button>
+              <button class="nyf-page-arrow" type="button" data-action="random" data-i18n-aria="randomArtwork" aria-label="Découvrir une autre œuvre disparue"><span aria-hidden="true">→</span><span class="nyf-arrow-label" data-i18n="randomArtwork">Découvrir une autre œuvre disparue</span></button>
+            </nav>
+            <div class="nyf-work-stage" data-work-stage>
+              <section class="nyf-detail-grid" data-i18n-aria="artworkSection" aria-label="L’histoire de l’œuvre" data-work>
+                <figure class="nyf-work">
+                  <button class="nyf-zoom-trigger" type="button" data-action="zoom" data-work-zoom><img class="nyf-detail-image" data-work-image decoding="async" alt=""></button>
+                  <p class="nyf-image-hint" data-i18n="imageHint">Cliquer sur l’image pour l’agrandir</p>
+                  <p class="nyf-image-unavailable" data-image-error data-i18n="imageUnavailable" hidden>La reproduction de cette œuvre est momentanément indisponible.</p>
+                  <figcaption class="nyf-caption-small"><span data-work-credit></span> · <a data-work-image-source target="_blank" rel="noopener noreferrer"><span data-i18n="imageSource">Source de l’image</span> ↗</a></figcaption>
+                </figure>
+                <div>
+                  <p class="nyf-eyebrow" data-work-artist></p>
+                  <h2 class="nyf-detail-title" data-work-title></h2>
+                  <p class="nyf-work-subtitle" data-work-headline></p>
+                  <span class="nyf-state" data-work-status></span>
+                  <div data-work-story></div>
+                  <dl class="nyf-record">
+                    <div><dt data-work-creator-label>Artiste</dt><dd><a class="nyf-artist-link" href="#artist" data-action="artist" data-work-artist-link></a></dd></div>
+                    <div><dt data-i18n="dimensions">Dimensions</dt><dd data-work-dimensions></dd></div>
+                    <div><dt data-i18n="valuation">Estimation</dt><dd><span data-work-valuation></span><span class="nyf-valuation-note" data-work-valuation-note hidden></span></dd></div>
+                    <div><dt data-i18n="medium">Technique</dt><dd data-work-medium></dd></div>
+                    <div><dt data-i18n="collection">Collection</dt><dd data-work-collection></dd></div>
+                    <div><dt data-i18n="disappearanceDate">Date de disparition</dt><dd><time data-work-disappearance-date></time></dd></div>
+                    <div><dt data-i18n="disappearanceCause">Disparition attribuée à</dt><dd><a class="nyf-event-link" href="#event" data-action="event" data-work-event></a></dd></div>
+                  </dl>
+                  <div class="nyf-sources" data-work-sources data-i18n-aria="historicalSources" aria-label="Sources historiques"></div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div data-nyf-view="event" hidden>
+          <button class="nyf-back" type="button" data-action="back-artwork"><span aria-hidden="true">←</span> <span data-i18n="backArtwork">Revenir à l’œuvre</span></button>
+          <section class="nyf-event" data-i18n-aria="eventSection" aria-label="Événement de disparition">
+            <p class="nyf-eyebrow" data-i18n="eventSection">Événement de disparition</p>
+            <h2 class="nyf-detail-title" data-event-title></h2>
+            <p class="nyf-event-meta"><time data-event-date></time> · <span data-event-location></span></p>
+            <p class="nyf-story" data-event-description></p>
+            <div class="nyf-sources" data-event-sources data-i18n-aria="historicalSources" aria-label="Sources historiques"></div>
+            <h3 class="nyf-event-heading" data-i18n="eventArtworks">Œuvres de cet événement présentes dans la galerie</h3>
+            <div class="nyf-event-grid" data-event-artworks></div>
+            <p class="nyf-story" data-event-empty data-i18n="eventEmpty" hidden>Aucune autre œuvre de cet événement n’est encore présente dans la galerie.</p>
+          </section>
+        </div>
+        <div data-nyf-view="artist" hidden>
+          <button class="nyf-back" type="button" data-action="back-artwork"><span aria-hidden="true">←</span> <span data-i18n="backArtwork">Revenir à l’œuvre</span></button>
+          <section class="nyf-event" data-i18n-aria="artistSection" aria-label="Œuvres par artiste">
+            <p class="nyf-eyebrow" data-artist-kind></p>
+            <h2 class="nyf-detail-title" data-artist-title></h2>
+            <p class="nyf-event-meta" data-artist-count></p>
+            <p class="nyf-story" data-artist-description></p>
+            <h3 class="nyf-event-heading" data-i18n="artistArtworks">Œuvres disparues présentes dans la galerie</h3>
+            <div class="nyf-event-grid" data-artist-artworks></div>
+          </section>
+        </div>
+        <div data-nyf-view="about" hidden>
+          <section class="nyf-about" data-i18n-aria="aboutSection" aria-label="Le projet Not Yet Forgotten (NYF)">
+            <p class="nyf-eyebrow" data-i18n="tagline">Pour que la mémoire reste</p>
+            <h1><span data-i18n="aboutTitleFirst">Disparues.</span><br><em data-i18n="aboutTitleLast">Pas oubliées.</em></h1>
+            <p class="nyf-description" data-i18n="aboutDescription">Not Yet Forgotten (NYF) est une invitation à découvrir les œuvres d’art perdues au fil de l’Histoire. Certaines ont été dérobées, d’autres détruites. Leurs images, leurs traces et leurs récits nous permettent encore de les rencontrer.</p>
+            <div class="nyf-brand nyf-about-mark" aria-hidden="true">
+              <span class="nyf-symbol"></span>
+              <span class="nyf-wordmark"><span class="nyf-wordmark-line">Not Yet</span><br><span class="nyf-wordmark-line">Forgotten</span> <span class="nyf-initials">(NYF)</span></span>
+            </div>
+            <p class="nyf-description" data-i18n="aboutInvitation">Une découverte en appelle une autre. On prend le temps de regarder, de lire, puis de rencontrer une nouvelle œuvre.</p>
+            <button class="nyf-primary" type="button" data-action="visit" disabled><span data-i18n="discoverArtwork">Découvrir une œuvre</span> <span aria-hidden="true">↗</span></button>
+          </section>
+        </div>
+      </main>
+      <footer class="nyf-footer"><span>Not Yet Forgotten (NYF)</span><span data-i18n="tagline">Pour que la mémoire reste</span></footer>
+      <p class="nyf-screen-status" aria-live="polite" aria-atomic="true" data-nyf-status></p>
+    </div>
+    <dialog class="nyf-lightbox" data-lightbox aria-labelledby="nyf-lightbox-title" aria-describedby="nyf-lightbox-meta">
+      <div class="nyf-lightbox-header">
+        <div class="nyf-lightbox-heading">
+          <p id="nyf-lightbox-title" data-lightbox-title></p>
+          <p id="nyf-lightbox-meta" class="nyf-lightbox-meta"><span data-lightbox-artist></span><span class="nyf-lightbox-disappearance"><span data-i18n="disappearanceDate">Date de disparition</span> : <time data-lightbox-disappearance-date></time></span></p>
+        </div>
+        <button class="nyf-lightbox-close" type="button" data-action="close-image" data-i18n-aria="closeImage" aria-label="Fermer l’image" autofocus><span aria-hidden="true">×</span></button>
+      </div>
+      <figure>
+        <div class="nyf-lightbox-canvas" data-zoom-canvas><div class="nyf-image-surface" data-zoom-surface><img data-lightbox-image alt="" draggable="false"></div><p class="nyf-image-unavailable" data-lightbox-error data-i18n="imageUnavailable" hidden>La reproduction de cette œuvre est momentanément indisponible.</p></div>
+        <figcaption class="nyf-caption-small nyf-lightbox-footer">
+          <span data-lightbox-credit></span>
+          <div class="nyf-zoom-tools" role="group" data-i18n-aria="zoomControls" aria-label="Zoom de l’image">
+            <button type="button" data-action="zoom-out" data-i18n-aria="zoomOut" aria-label="Réduire le zoom" disabled><span aria-hidden="true">−</span></button>
+            <button class="nyf-zoom-reset" type="button" data-action="zoom-reset" data-i18n-aria="resetZoom" aria-label="Revenir à l’image entière"><span data-zoom-value aria-live="polite">100 %</span></button>
+            <button type="button" data-action="zoom-in" data-i18n-aria="zoomIn" aria-label="Augmenter le zoom"><span aria-hidden="true">+</span></button>
+          </div>
+        </figcaption>
+      </figure>
+    </dialog>
+  </div>
+</body>
+</html>

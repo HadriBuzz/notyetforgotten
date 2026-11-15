@@ -1,0 +1,415 @@
+{
+  "ui": {
+    "pageTitle": "Not Yet Forgotten (NYF) — Keeping memory alive",
+    "pageDescription": "Discover lost works of art and the stories they have left behind. Keeping memory alive.",
+    "brandHome": "Not Yet Forgotten (NYF), home",
+    "mainNavigation": "Main navigation",
+    "explore": "Explore",
+    "about": "The project",
+    "switchLanguage": "Passer en français",
+    "tagline": "Keeping memory alive",
+    "homeSection": "Gallery entrance",
+    "homeTitleFirst": "Sometimes Art disappears.",
+    "homeTitleSecond": "Their memory",
+    "homeTitleLast": "remains.",
+    "homeDescriptionFirst": "Stolen, destroyed, lost.",
+    "homeDescriptionLast": "Discover lost works of art. Some may resurface, others are lost forever, but all cling to our memories.",
+    "startVisit": "Begin your visit",
+    "visitNote": "One work. One story. At your own pace.",
+    "artworkSection": "The story of the artwork",
+    "artwork": "Artwork",
+    "medium": "Medium",
+    "collection": "Collection",
+    "disappearanceDate": "Date of disappearance",
+    "disappearanceCause": "Disappearance attributed to",
+    "historicalSources": "Historical sources",
+    "imageSource": "Image source",
+    "imageUnavailable": "The reproduction of this artwork is temporarily unavailable.",
+    "imageHint": "Click the image to enlarge it",
+    "enlargeImage": "View larger: {title}",
+    "closeImage": "Close image",
+    "artworkNavigation": "Browse artworks",
+    "previousArtwork": "Previous artwork",
+    "randomArtwork": "Explore another lost artwork",
+    "aboutSection": "The Not Yet Forgotten (NYF) project",
+    "aboutTitleFirst": "Gone.",
+    "aboutTitleLast": "Not forgotten.",
+    "aboutDescription": "Not Yet Forgotten (NYF) invites you to discover works of art lost throughout history. Some were stolen, others destroyed. Their images, traces and stories still allow us to encounter them.",
+    "aboutInvitation": "One discovery leads to another. Take time to look, to read, then to encounter a new work.",
+    "discoverArtwork": "Discover an artwork",
+    "reproduction": "Reproduction of the artwork",
+    "backArtwork": "Back to the artwork",
+    "eventSection": "Disappearance event",
+    "eventArtworks": "Works from this event featured in the gallery",
+    "currentArtwork": "Current artwork",
+    "readStory": "Read the story",
+    "eventEmpty": "No other works from this event have been added to the gallery yet.",
+    "loadingError": "The catalogue could not be loaded. Please try again in a moment.",
+    "dimensions": "Dimensions",
+    "dimensionsUnknown": "Not documented",
+    "valuation": "Estimated value",
+    "valuationUnknown": "No documented estimate",
+    "valuationPublished": "Range published on {date}, not updated.",
+    "zoomControls": "Image zoom",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "resetZoom": "Show the whole image",
+    "valuationIndicative": "Indicative range.",
+    "artist": "Artist",
+    "origin": "Origin",
+    "attribution": "Attribution",
+    "artistSection": "Artworks by artist",
+    "artistArtworks": "Missing works featured in the gallery",
+    "artistCountOne": "{count} artwork in this gallery",
+    "artistCountMany": "{count} artworks in this gallery",
+    "artistDescription": "This page brings together the artist’s missing works featured in this gallery. The selection may grow as the project develops.",
+    "artistOriginDescription": "The maker of this work is unidentified. This grouping reflects its cultural origin rather than the name of an artist.",
+    "artistAttributionDescription": "This grouping preserves the attribution “after”: the works follow models by the named artists and are not presented as having been made directly by them."
+  },
+  "artworks": {
+    "rembrandt-tempete": {
+      "title": "Christ in the Storm on the Sea of Galilee",
+      "medium": "Oil on canvas",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "A storm. Then silence.",
+      "story": [
+        "A boat, waves, a shaft of light breaking through the sky. In 1633, Rembrandt painted this biblical scene: it is his only known painted seascape.",
+        "On 18 March 1990, thieves disguised as police officers entered the Isabella Stewart Gardner Museum in Boston. Thirteen works were taken. This canvas was cut from its frame.",
+        "The empty frames remain in the museum, holding a place for the missing works."
+      ],
+      "image": {
+        "alt": "A sailing boat in rough seas, illuminated by a break in the clouds: Christ in the Storm on the Sea of Galilee by Rembrandt.",
+        "credit": "Reproduction · Wikimedia Commons · Public domain"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft"
+      ],
+      "dimensions": "160 × 128 cm"
+    },
+    "vermeer-concert": {
+      "title": "The Concert",
+      "medium": "Oil on canvas",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "Music left to the imagination.",
+      "story": [
+        "Two women and a man gather around a harpsichord. One woman plays, the other sings from a score, while the man, seen from behind, plays the lute.",
+        "Isabella Stewart Gardner acquired The Concert in Paris in 1892. Almost a century later, it was among the thirteen works taken from the museum on 18 March 1990.",
+        "The reproduction still allows us to linger over this quiet gathering, while the original canvas remains missing."
+      ],
+      "image": {
+        "alt": "Two women and a man gathered around a harpsichord: The Concert by Johannes Vermeer.",
+        "credit": "Reproduction · Wikimedia Commons · Public domain"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft",
+        "Description on Wikipedia"
+      ],
+      "dimensions": "72.5 × 64.7 cm"
+    },
+    "manet-tortoni": {
+      "title": "Chez Tortoni",
+      "date": "Around 1875",
+      "medium": "Oil on canvas",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "An unexpected glance in a café.",
+      "story": [
+        "A man in a top hat pauses and looks at us. A sketchbook and a glass sit before him: Manet captures a moment in the life of a Parisian café.",
+        "Acquired for Isabella Stewart Gardner in 1922, this small painting was stolen in March 1990. It was the only work taken from the museum’s first floor that night.",
+        "The thieves left its frame in the security director’s office. The image preserves this encounter with a stranger."
+      ],
+      "image": {
+        "alt": "A man wearing a top hat looks at the viewer, seated before a sketchbook in a café: Chez Tortoni by Manet.",
+        "credit": "Reproduction · Wikimedia Commons · Public domain"
+      },
+      "sourceLabels": [
+        "Museum catalogue"
+      ],
+      "dimensions": "26 × 34 cm"
+    },
+    "van-gogh-tarascon": {
+      "title": "The Painter on the Road to Tarascon",
+      "medium": "Oil on canvas",
+      "collection": "Former collection of the Kaiser-Friedrich-Museum, Magdeburg",
+      "shortStatus": "Missing since 1945",
+      "status": "Missing since 1945, presumed destroyed",
+      "archive": "Archive · Magdeburg · 1945",
+      "headline": "On the road, a shadow remains.",
+      "story": [
+        "A painter walks along a sunlit road carrying his equipment. His figure and shadow stand out against the colours of the landscape. Van Gogh painted this work in 1888.",
+        "The canvas belonged to the museum in Magdeburg when it was moved to a salt mine for safekeeping during the Second World War. Its trail goes cold in 1945; it is generally considered destroyed.",
+        "Reproductions made before its disappearance still allow us to encounter this painter on his way. The exact fate of the original remains uncertain."
+      ],
+      "image": {
+        "alt": "A painter carrying his equipment walks along a tree-lined road, casting a long shadow: The Painter on the Road to Tarascon by Van Gogh.",
+        "credit": "Archival reproduction · Wikimedia Commons · Public domain"
+      },
+      "sourceLabels": [
+        "Ōtsuka Museum — article on the reproduction",
+        "Dimensions — Princeton catalogue"
+      ],
+      "dimensions": "48 × 44 cm"
+    },
+    "rembrandt-dame-gentilhomme": {
+      "title": "A Lady and Gentleman in Black",
+      "medium": "Oil on canvas",
+      "dimensions": "131.6 × 109 cm",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "Two figures in the half-light.",
+      "story": [
+        "In a dark interior, a man stands beside a seated woman. Their black clothes draw attention to their faces and white collars.",
+        "Painted in 1633, this double portrait was cut from its frame in the Dutch Room during the theft of 18 March 1990.",
+        "The frame preserved at the museum marks the place of the missing canvas."
+      ],
+      "image": {
+        "alt": "A standing man and a seated woman dressed in black: A Lady and Gentleman in Black by Rembrandt.",
+        "credit": "Reproduction · Isabella Stewart Gardner Museum"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft"
+      ]
+    },
+    "rembrandt-autoportrait": {
+      "title": "Portrait of the Artist as a Young Man",
+      "medium": "Etching",
+      "dimensions": "4.5 × 5 cm",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "A face in just a few centimetres.",
+      "story": [
+        "A cap, curls and a gaze turned towards us: Rembrandt portrays himself in this tiny etching.",
+        "Acquired by Isabella Stewart Gardner in 1886, it was the first work by Rembrandt to enter her collection.",
+        "On 18 March 1990, the thieves took it from the Dutch Room. Measuring just 4.5 × 5 cm, it is one of the thirteen missing pieces."
+      ],
+      "image": {
+        "alt": "An etched self-portrait of the young Rembrandt wearing a cap, with long curly hair.",
+        "credit": "Reproduction · Isabella Stewart Gardner Museum"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft"
+      ],
+      "date": "About 1633"
+    },
+    "flinck-obelisque": {
+      "title": "Landscape with an Obelisk",
+      "medium": "Oil on oak panel",
+      "dimensions": "54.5 × 71 cm",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "Light on a monument",
+      "story": [
+        "Beneath a clouded sky, an obelisk rises in a landscape of trees, water and tiny travellers.",
+        "Long attributed to Rembrandt, this painting of 1638 was recognised in the 1980s as the work of his pupil Govaert Flinck.",
+        "It was removed from its frame in the Dutch Room during the theft of 18 March 1990."
+      ],
+      "image": {
+        "alt": "A dark river landscape with trees and an illuminated obelisk: Landscape with an Obelisk by Flinck.",
+        "credit": "Reproduction · Isabella Stewart Gardner Museum"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft"
+      ]
+    },
+    "degas-sortie-pesage": {
+      "title": "Leaving the Paddock",
+      "medium": "Watercolour and pencil on paper",
+      "dimensions": "10.5 × 16 cm",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "The moment before the track.",
+      "story": [
+        "A jockey in a red cap rides a horse seen from behind. A man leads the animal towards the track: Degas catches a moment in the preparations for a race.",
+        "The museum dates this small watercolour to the nineteenth century without specifying a year. Isabella Stewart Gardner bought it in Paris in 1919.",
+        "It is one of the five works by Degas taken from the Short Gallery on 18 March 1990."
+      ],
+      "image": {
+        "alt": "A jockey on a horse seen from behind, led towards the track by a man: Leaving the Paddock by Degas.",
+        "credit": "Reproduction · Isabella Stewart Gardner Museum"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft"
+      ],
+      "date": "19th century"
+    },
+    "degas-cortege-florence": {
+      "title": "Procession on a Road near Florence",
+      "medium": "Pencil and sepia wash on paper",
+      "dimensions": "15.6 × 20.6 cm",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "Figures following the road.",
+      "story": [
+        "A pale road crosses a landscape in sepia wash. Figures and a horse-drawn cart move through this procession drawn by Degas between 1857 and 1860.",
+        "Isabella Stewart Gardner acquired this sheet in Paris in 1919 at a sale of the artist’s studio.",
+        "It was stolen from the Short Gallery with four other works by Degas on 18 March 1990."
+      ],
+      "image": {
+        "alt": "A procession of figures and a horse-drawn cart on a road, drawn in sepia wash by Degas.",
+        "credit": "Reproduction · Isabella Stewart Gardner Museum"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft"
+      ]
+    },
+    "degas-trois-jockeys": {
+      "title": "Three Mounted Jockeys",
+      "medium": "Black ink, washes and oil pigments on brown paper",
+      "dimensions": "30.5 × 24 cm",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "Movement taking shape.",
+      "story": [
+        "A jockey and his mount dominate the sheet. Two smaller riders, drawn upside down at the bottom, reveal Degas’s process of study.",
+        "Made around 1885–1888, the work combines ink, coloured washes and oil pigments on brown paper.",
+        "Acquired in 1919, it is one of five works by Degas stolen from the Short Gallery on 18 March 1990."
+      ],
+      "image": {
+        "alt": "A study of jockeys on brown paper: a large rider in profile and two others drawn upside down at the bottom.",
+        "credit": "Reproduction · Isabella Stewart Gardner Museum"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft"
+      ],
+      "date": "About 1885–1888"
+    },
+    "degas-programme-96": {
+      "title": "Study for the Programme de la soirée artistique du 15 juin 1884 (Galerie Ponsin)",
+      "medium": "Black chalk on paper",
+      "dimensions": "24.6 × 31.4 cm",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "An evening sketched on paper.",
+      "story": [
+        "Dancers, instruments and figures surround an area filled with marks suggesting text. Degas prepares the programme for an artistic evening at Galerie Ponsin in 1884.",
+        "This sheet is catalogued as 3.1.o.96. It is distinct from the museum’s other study for the same programme.",
+        "The two drawings, acquired together in 1919, were taken from the Short Gallery on 18 March 1990."
+      ],
+      "image": {
+        "alt": "Degas’s study 3.1.o.96 for the Ponsin programme: dancers, instruments and a large area marked with vertical lines.",
+        "credit": "Reproduction · Isabella Stewart Gardner Museum"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft"
+      ]
+    },
+    "degas-programme-97": {
+      "title": "Study for the Programme de la soirée artistique du 15 juin 1884 (Galerie Ponsin)",
+      "medium": "Black chalk on paper",
+      "dimensions": "26.6 × 37.6 cm",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "The same project, another sheet.",
+      "story": [
+        "A dancer, instruments and figures fill this other study for the 1884 evening at Galerie Ponsin. A large rectangle at the lower right remains almost empty.",
+        "Catalogued as 3.1.o.97, this sheet is distinct from study 3.1.o.96: their dimensions and some drawn details differ.",
+        "Acquired with the other study in 1919, it also disappeared in the theft of 18 March 1990 from the Short Gallery."
+      ],
+      "image": {
+        "alt": "Degas’s study 3.1.o.97 for the Ponsin programme: a dancer, instruments and an almost empty rectangle at the lower right.",
+        "credit": "Reproduction · Isabella Stewart Gardner Museum"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft"
+      ]
+    },
+    "gu-bronze": {
+      "title": "Gu",
+      "medium": "Bronze",
+      "dimensions": "26.5 × 15.6 cm",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "An ancient vessel, a recent absence.",
+      "story": [
+        "This ritual bronze vessel has a narrow waist, a flaring mouth and geometric decoration. It dates to the twelfth century BCE, during the Shang dynasty.",
+        "Shang elites used vessels of this type to make offerings to ancestors. Isabella Stewart Gardner acquired this gu in 1922.",
+        "Displayed in the Dutch Room, it was taken on 18 March 1990. The theft included this ancient object as well as paintings and drawings."
+      ],
+      "image": {
+        "alt": "A Chinese bronze gu with a flaring mouth, narrow waist and geometric decoration.",
+        "credit": "Reproduction · Isabella Stewart Gardner Museum"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft"
+      ],
+      "date": "12th century BCE",
+      "artist": "China · Shang dynasty"
+    },
+    "aigle-imperial": {
+      "title": "Eagle Finial",
+      "medium": "Gilded bronze",
+      "dimensions": "Height: 25.4 cm",
+      "shortStatus": "Stolen in 1990",
+      "status": "Stolen on 18 March 1990",
+      "archive": "Archive · Boston · 18 March 1990",
+      "headline": "The emblem detached from its flag.",
+      "story": [
+        "An eagle with outstretched wings stands on a base marked with the number 1. This gilded bronze finial crowned the flag of the First Regiment of Grenadiers of Foot of Napoleon’s Imperial Guard.",
+        "Dated 1813–1814 and made after Chaudet and Thomire, it entered the collection with the flag in 1880.",
+        "On 18 March 1990, the thieves took the eagle from the Short Gallery. The flag remained at the museum; the archival photograph shows both before their separation."
+      ],
+      "image": {
+        "alt": "Black-and-white archival photograph of the eagle above its flag; only the eagle was stolen.",
+        "credit": "Archival photograph · Isabella Stewart Gardner Museum"
+      },
+      "sourceLabels": [
+        "Museum catalogue",
+        "The theft"
+      ],
+      "artist": "After Antoine-Denis Chaudet and Pierre-Philippe Thomire"
+    }
+  },
+  "events": {
+    "gardner-1990": {
+      "title": "The Isabella Stewart Gardner Museum theft",
+      "cause": "Museum theft — Boston, 1990",
+      "location": "Boston, United States",
+      "description": "On 18 March 1990, two men disguised as police officers stole thirteen pieces from the Isabella Stewart Gardner Museum in Boston: five paintings, five works on paper by Degas, a Rembrandt etching and two bronze objects. All thirteen are gathered here.",
+      "sourceLabels": [
+        "The museum’s account"
+      ]
+    },
+    "tarascon-1945": {
+      "title": "Disappearance during the Second World War",
+      "cause": "Wartime loss — presumed destroyed",
+      "location": "Germany · Magdeburg museum collection",
+      "description": "The painting was moved to a salt mine for safekeeping during the Second World War. It has been missing since 1945 and is presumed destroyed. The exact circumstances remain uncertain; this record does not imply that other works disappeared in the same incident.",
+      "sourceLabels": [
+        "Ōtsuka Museum — article on the reproduction"
+      ]
+    }
+  },
+  "artists": {
+    "chine-shang": {
+      "name": "China · Shang dynasty"
+    },
+    "d-apres-chaudet-thomire": {
+      "name": "After Antoine-Denis Chaudet and Pierre-Philippe Thomire"
+    }
+  }
+}
