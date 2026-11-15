@@ -1,2 +1,11 @@
 __pycache__/
 design/preview.html
+
+# Outils locaux de l'assistant
+.agents/
+skills-lock.json
+
+# Cache et journaux locaux de Firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
