@@ -74,7 +74,7 @@ et la fiche indique « Estimation non documentée ». Les valeurs d’un ensembl
 volé, les récompenses et les prix de reproductions ne sont pas des estimations
 individuelles. Les fourchettes éditoriales sont de 170–250 millions de dollars
 américains pour Le Concert et de 120–150 millions pour La Tempête sur la mer de
-Galilée. Les douze autres notices restent non documentées.
+Galilée. Les quatorze autres notices restent non documentées.
 L’accueil choisit une œuvre au hasard à chaque arrivée, y compris après un
 rechargement, en évitant celle de l’accueil précédent si le catalogue en contient
 plusieurs. Un changement de langue conserve l’œuvre affichée. Le bouton pour
@@ -88,7 +88,10 @@ lien à partir de leur seule date.
 Les informations incertaines restent signalées comme telles.
 Le catalogue réunit les treize pièces du vol Gardner de 1990 (cinq peintures,
 cinq œuvres de Degas sur papier, une eau-forte de Rembrandt et deux bronzes),
-ainsi que le Van Gogh disparu en 1945. Les deux études de Degas pour le programme
+ainsi que le Van Gogh disparu en 1945 et les deux pastels de Monet dérobés au
+Kunsthal de Rotterdam en 2012 : Le Pont de Charing Cross, Londres et Le Pont de
+Waterloo, Londres. Ces deux œuvres de la collection Triton sont datées de 1901 ;
+leur destruction éventuelle demeure incertaine. Les deux études de Degas pour le programme
 de 1884 sont deux œuvres distinctes, inventoriées `3.1.o.96` et `3.1.o.97`.
 
 Le clic sur une image ouvre une visionneuse, sur l’accueil, la fiche d’œuvre et la

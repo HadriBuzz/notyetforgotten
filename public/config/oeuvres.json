@@ -27,6 +27,28 @@
           "url": "https://o-museum.or.jp/en/pages/622/"
         }
       ]
+    },
+    {
+      "id": "kunsthal-2012",
+      "date": "2012-10-16",
+      "title": "Le vol au Kunsthal de Rotterdam",
+      "cause": "Vol au musée — Rotterdam, 2012",
+      "location": "Rotterdam, Pays-Bas",
+      "description": "Dans la nuit du 15 au 16 octobre 2012, sept œuvres de la collection Triton sont dérobées au Kunsthal de Rotterdam, où elles sont prêtées pour l’exposition « Avant-gardes ». Deux pastels de Monet disparaissent avec des œuvres de Picasso, Matisse, Gauguin, Meyer de Haan et Lucian Freud. Les deux Monet sont réunis ici. L’enquête mène en Roumanie. La mère d’un des suspects affirme avoir brûlé les œuvres, puis se rétracte. Des traces de peinture et des clous sont retrouvés dans les cendres de son poêle, sans permettre d’identifier les œuvres détruites. Le sort de chacun des deux pastels reste incertain.",
+      "sources": [
+        {
+          "label": "Kunsthal — l’exposition Avant-gardes",
+          "url": "https://kunsthal.nl/nl/tentoonstellingen/triton-foundation/"
+        },
+        {
+          "label": "Déclaration de la directrice du Kunsthal, reproduite par ArtsJournal",
+          "url": "https://www.artsjournal.com/culturegrrl/2012/10/kunsthal_theft_where_were_the.html"
+        },
+        {
+          "label": "DutchNews — les incertitudes sur la destruction",
+          "url": "https://www.dutchnews.nl/2013/07/stolen_kunsthal_paintings_thre/"
+        }
+      ]
     }
   ],
   "artworks": [
@@ -656,6 +678,100 @@
       ],
       "valuation": null,
       "artistId": "d-apres-chaudet-thomire"
+    },
+    {
+      "id": "monet-charing-cross-bridge",
+      "artistId": "claude-monet",
+      "disappearanceEventId": "kunsthal-2012",
+      "title": "Le Pont de Charing Cross, Londres",
+      "artist": "Claude Monet",
+      "date": "1901",
+      "medium": "Pastel sur papier",
+      "dimensions": "31 × 48,5 cm",
+      "collection": "Collection Triton · prêtée au Kunsthal de Rotterdam en 2012",
+      "shortStatus": "Dérobé en 2012",
+      "status": "Dérobé le 16 octobre 2012 — sort incertain",
+      "archive": "Archive · Rotterdam · 16 octobre 2012",
+      "headline": "Le pont se dissout dans la brume.",
+      "story": [
+        "Une ligne sombre traverse un paysage de gris pâle, de bleu et de vert. Dans ce pastel de 1901, Monet laisse presque se confondre le ciel et la Tamise ; les piles du pont et leurs reflets donnent seuls une assise à la brume.",
+        "Lors de ses séjours londoniens entre 1899 et 1901, il revient sur les mêmes motifs : Charing Cross Bridge, Waterloo Bridge et le Parlement. La lumière, les fumées et le brouillard transforment sans cesse le paysage. Ce pastel sur papier appartient à cette recherche, menée aussi dans ses séries de peintures.",
+        "Prêtée par la collection Triton au Kunsthal de Rotterdam, l’œuvre est emportée le 16 octobre 2012 avec le pastel du pont de Waterloo et cinq autres œuvres. Sa destruction a été envisagée au cours de l’enquête, mais son sort demeure incertain."
+      ],
+      "image": {
+        "src": "assets/oeuvres/monnet-charring-cross-bridge/miniature.jpg",
+        "largeSrc": "assets/oeuvres/monnet-charring-cross-bridge/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/monnet-charring-cross-bridge/apercu.webp",
+        "alt": "Le pont de Charing Cross et ses piles se reflètent dans la Tamise, au milieu d’une brume bleu-vert : pastel de Claude Monet.",
+        "width": 753,
+        "height": 480,
+        "largeWidth": 753,
+        "largeHeight": 480,
+        "credit": "Reproduction fournie pour le projet · Claude Monet · Domaine public",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charing_Cross_Bridge,_London.jpg"
+      },
+      "sources": [
+        {
+          "label": "Ministère espagnol de la Culture — technique et dimensions (2010)",
+          "url": "https://www.boe.es/boe/dias/2010/02/05/pdfs/BOE-A-2010-1909.pdf"
+        },
+        {
+          "label": "The Courtauld — Monet et les vues de Londres",
+          "url": "https://courtauld.ac.uk/about-us/press-office/press-releases/the-courtauld-gallery-announces-major-exhibition-monet-and-london-views-of-the-thames/"
+        },
+        {
+          "label": "Déclaration du Kunsthal sur le vol, reproduite par ArtsJournal",
+          "url": "https://www.artsjournal.com/culturegrrl/2012/10/kunsthal_theft_where_were_the.html"
+        }
+      ],
+      "valuation": null
+    },
+    {
+      "id": "monet-waterloo-bridge",
+      "artistId": "claude-monet",
+      "disappearanceEventId": "kunsthal-2012",
+      "title": "Le Pont de Waterloo, Londres",
+      "artist": "Claude Monet",
+      "date": "1901",
+      "medium": "Pastel sur papier",
+      "dimensions": "30,5 × 48 cm",
+      "collection": "Collection Triton · prêtée au Kunsthal de Rotterdam en 2012",
+      "shortStatus": "Dérobé en 2012",
+      "status": "Dérobé le 16 octobre 2012 — sort incertain",
+      "archive": "Archive · Rotterdam · 16 octobre 2012",
+      "headline": "Des arches bleues dans la lumière.",
+      "story": [
+        "Quelques arches bleues émergent d’une lumière laiteuse. Des touches de rose et de bleu animent le tablier du pont, tandis que les cheminées de la rive opposée s’effacent dans le brouillard. Le pastel laisse vibrer les contours plutôt qu’il ne les fixe.",
+        "Datée de 1901, cette vue sur papier accompagne les recherches de Monet sur la Tamise. Depuis le Savoy Hotel, le peintre observe les ponts de Londres et leurs transformations sous l’effet de la lumière et de la brume.",
+        "Le 16 octobre 2012, ce pastel de la collection Triton est dérobé au Kunsthal de Rotterdam avec une autre vue de Londres par Monet et cinq autres œuvres. Les déclarations contradictoires sur leur destruction n’ont pas permis d’établir le sort de cette feuille."
+      ],
+      "image": {
+        "src": "assets/oeuvres/monnet-waterloo-bridge/miniature.jpg",
+        "largeSrc": "assets/oeuvres/monnet-waterloo-bridge/large.jpg",
+        "previewLargeSrc": "assets/oeuvres/monnet-waterloo-bridge/apercu.webp",
+        "alt": "Les arches bleues du pont de Waterloo sur la Tamise, baignées d’une brume claire, avec des cheminées à l’arrière-plan : pastel de Claude Monet.",
+        "width": 800,
+        "height": 500,
+        "largeWidth": 800,
+        "largeHeight": 500,
+        "credit": "Reproduction · Police de Rotterdam / Wikimedia Commons · Domaine public",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waterloo_Bridge_in_London.jpg"
+      },
+      "sources": [
+        {
+          "label": "Ministère espagnol de la Culture — technique et dimensions (2010)",
+          "url": "https://www.boe.es/boe/dias/2010/02/05/pdfs/BOE-A-2010-1909.pdf"
+        },
+        {
+          "label": "The Courtauld — Monet et les vues de Londres",
+          "url": "https://courtauld.ac.uk/about-us/press-office/press-releases/the-courtauld-gallery-announces-major-exhibition-monet-and-london-views-of-the-thames/"
+        },
+        {
+          "label": "Déclaration du Kunsthal sur le vol, reproduite par ArtsJournal",
+          "url": "https://www.artsjournal.com/culturegrrl/2012/10/kunsthal_theft_where_were_the.html"
+        }
+      ],
+      "valuation": null
     }
   ],
   "artists": [
@@ -698,6 +814,11 @@
       "id": "d-apres-chaudet-thomire",
       "name": "D’après Antoine-Denis Chaudet et Pierre-Philippe Thomire",
       "kind": "after"
+    },
+    {
+      "id": "claude-monet",
+      "name": "Claude Monet",
+      "kind": "artist"
     }
   ]
 }

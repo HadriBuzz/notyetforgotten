@@ -382,6 +382,54 @@
         "The theft"
       ],
       "artist": "After Antoine-Denis Chaudet and Pierre-Philippe Thomire"
+    },
+    "monet-charing-cross-bridge": {
+      "title": "Charing Cross Bridge, London",
+      "medium": "Pastel on paper",
+      "dimensions": "31 × 48.5 cm",
+      "collection": "Triton Collection · on loan to the Kunsthal Rotterdam in 2012",
+      "shortStatus": "Stolen in 2012",
+      "status": "Stolen on 16 October 2012 — fate uncertain",
+      "archive": "Archive · Rotterdam · 16 October 2012",
+      "headline": "The bridge dissolves into mist.",
+      "story": [
+        "A dark line crosses a landscape of pale grey, blue and green. In this pastel of 1901, Monet almost merges the sky with the Thames; the bridge piers and their reflections give the mist a foothold.",
+        "During his London visits between 1899 and 1901, he returned to the same subjects: Charing Cross Bridge, Waterloo Bridge and the Houses of Parliament. Light, smoke and fog continually transformed the view. This pastel on paper belongs to that exploration, also pursued in his series of paintings.",
+        "On loan from the Triton Collection to the Kunsthal in Rotterdam, the work was taken on 16 October 2012 along with the Waterloo Bridge pastel and five other works. Investigators considered its possible destruction, but its fate remains uncertain."
+      ],
+      "image": {
+        "alt": "Charing Cross Bridge and its piers reflected in the Thames amid blue-green mist: a pastel by Claude Monet.",
+        "credit": "Reproduction supplied for the project · Claude Monet · Public domain"
+      },
+      "sourceLabels": [
+        "Spanish Ministry of Culture — medium and dimensions (2010)",
+        "The Courtauld — Monet and his London views",
+        "Kunsthal statement on the theft, reproduced by ArtsJournal"
+      ]
+    },
+    "monet-waterloo-bridge": {
+      "title": "Waterloo Bridge, London",
+      "medium": "Pastel on paper",
+      "dimensions": "30.5 × 48 cm",
+      "collection": "Triton Collection · on loan to the Kunsthal Rotterdam in 2012",
+      "shortStatus": "Stolen in 2012",
+      "status": "Stolen on 16 October 2012 — fate uncertain",
+      "archive": "Archive · Rotterdam · 16 October 2012",
+      "headline": "Blue arches in the light.",
+      "story": [
+        "Blue arches emerge from a milky light. Touches of pink and blue enliven the bridge deck, while chimneys on the far bank fade into the fog. The pastel lets the outlines shimmer rather than fixing them in place.",
+        "Dated 1901, this work on paper accompanies Monet’s explorations of the Thames. From the Savoy Hotel, the painter observed London’s bridges as light and mist transformed them.",
+        "On 16 October 2012, this pastel from the Triton Collection was stolen from the Kunsthal in Rotterdam, together with another London view by Monet and five other works. Conflicting statements about their destruction have not established the fate of this sheet."
+      ],
+      "image": {
+        "alt": "Blue arches of Waterloo Bridge over the Thames in a pale mist, with chimneys in the background: a pastel by Claude Monet.",
+        "credit": "Reproduction · Rotterdam Police / Wikimedia Commons · Public domain"
+      },
+      "sourceLabels": [
+        "Spanish Ministry of Culture — medium and dimensions (2010)",
+        "The Courtauld — Monet and his London views",
+        "Kunsthal statement on the theft, reproduced by ArtsJournal"
+      ]
     }
   },
   "events": {
@@ -402,6 +450,17 @@
       "sourceLabels": [
         "Ōtsuka Museum — article on the reproduction"
       ]
+    },
+    "kunsthal-2012": {
+      "title": "The Kunsthal Rotterdam theft",
+      "cause": "Museum theft — Rotterdam, 2012",
+      "location": "Rotterdam, Netherlands",
+      "description": "During the night of 15–16 October 2012, seven works from the Triton Collection were stolen from the Kunsthal in Rotterdam, where they were on loan for the exhibition “Avant-gardes”. Two Monet pastels disappeared alongside works by Picasso, Matisse, Gauguin, Meyer de Haan and Lucian Freud. Both Monets are featured here. The investigation led to Romania. A suspect’s mother said she had burned the works, then withdrew her statement. Paint traces and nails were found in the ashes of her stove, without identifying which works had been destroyed. The fate of each pastel remains uncertain.",
+      "sourceLabels": [
+        "Kunsthal — the Avant-gardes exhibition",
+        "Kunsthal director’s statement, reproduced by ArtsJournal",
+        "DutchNews — uncertainty over the destruction"
+      ]
     }
   },
   "artists": {
@@ -410,6 +469,9 @@
     },
     "d-apres-chaudet-thomire": {
       "name": "After Antoine-Denis Chaudet and Pierre-Philippe Thomire"
+    },
+    "claude-monet": {
+      "name": "Claude Monet"
     }
   }
 }
