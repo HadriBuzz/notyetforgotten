@@ -1,6 +1,6 @@
 # Not Yet Forgotten (NYF)
 
-Pour que la mémoire reste. Une galerie pour découvrir les œuvres d’art disparues,
+La mémoire: un des derniers remparts à la barbarie. Une galerie pour découvrir les œuvres d’art disparues,
 leur histoire et les traces qu’elles nous ont laissées.
 
 ## Démarrer en local
@@ -15,17 +15,20 @@ Ouvrir <http://localhost:8000>. Un serveur HTTP est nécessaire au chargement du
 catalogue JSON ; ouvrir directement `index.html` avec `file://` ne suffit pas.
 Aucune installation de dépendances n’est nécessaire.
 Ce serveur désactive le cache pour que les changements de textes, de styles et de
-scripts soient visibles après un rechargement. Il sert toujours la racine du projet.
+scripts soient visibles après un rechargement. Il sert le dossier `public/`.
 Pour changer de port : `python3 scripts/serve.py --port 8001`.
 Lors du premier passage depuis `python3 -m http.server`, arrêter l’ancien serveur
 avec Ctrl+C, lancer cette commande et faire un rechargement forcé (Ctrl+Maj+R).
 
 ## Organisation
 
+Les fichiers du site se trouvent dans `public/`.
+
 - `index.html` : structure des écrans, sans les notices des œuvres.
 - `config/oeuvres.json` : catalogue, œuvre d’accueil, récits, images et sources.
 - `config/translations/fr.json` : textes de l’interface en français.
 - `config/translations/en.json` : interface, notices et événements en anglais.
+- `ressources/oeuvres/<id-œuvre>.md` : détails et sources de la modale « En savoir plus sur l’œuvre ».
 - `assets/styles.css` : palette papier et olive, typographie et mise en page mobile.
 - `assets/oeuvres/<id-œuvre>/` : reproductions locales regroupées par œuvre :
   `miniature.jpg` pour la galerie, `large.jpg` ou `large.webp` pour la visionneuse et `apercu.webp`
@@ -82,7 +85,8 @@ commencer la visite ouvre l’œuvre présentée sur cet accueil.
 
 Chaque œuvre référence un `disappearanceEventId` dans la liste `events` du même
 catalogue. Un événement définit la date (année `1945` ou date `1990-03-18`),
-la cause à laquelle la disparition est attribuée, son contexte et ses sources.
+les circonstances de la disparition, son contexte et ses sources. La fiche affiche
+la date et les circonstances dans la ligne « Disparition ».
 Les œuvres du même événement sont regroupées automatiquement, sans déduire un
 lien à partir de leur seule date.
 Les informations incertaines restent signalées comme telles.
@@ -93,6 +97,23 @@ Kunsthal de Rotterdam en 2012 : Le Pont de Charing Cross, Londres et Le Pont de
 Waterloo, Londres. Ces deux œuvres de la collection Triton sont datées de 1901 ;
 leur destruction éventuelle demeure incertaine. Les deux études de Degas pour le programme
 de 1884 sont deux œuvres distinctes, inventoriées `3.1.o.96` et `3.1.o.97`.
+
+Pour chaque œuvre, ajouter `public/ressources/oeuvres/<id-œuvre>.md`, avec le
+texte français suivi de la traduction anglaise après la ligne `<!-- en -->`.
+Le français sert de repli. Séparer les paragraphes, titres et listes par une
+ligne vide. Le lien « En savoir plus sur l’œuvre », sous la ligne de séparation du statut, ouvre la modale.
+Elle accepte les titres Markdown, les listes à puces et les liens HTTP(S).
+Y renseigner les références que le lecteur doit pouvoir consulter.
+
+Renseigner `statusId` avec l’une des valeurs
+`stolen`, `destroyed`, `lost`, `historical-disappearance`, `unknown` ou `found`,
+ainsi que `statusCertainty` pour le degré de certitude. La combinaison de
+`destroyed` avec `probable` affiche « Probablement détruite ». Le libellé
+facultatif `statusNote` permet de préciser une incertitude, par exemple sur le
+sort d’une œuvre dont le vol est établi.
+
+Le lien « Soutenir le projet » du pied de page ouvre l’écran `#soutenir`.
+Cet écran annonce que les options de soutien sont en cours de création.
 
 Le clic sur une image ouvre une visionneuse, sur l’accueil, la fiche d’œuvre et la
 page d’événement. `image.largeSrc` fournit la reproduction en meilleure résolution ;
@@ -121,7 +142,7 @@ affichée. Le retour suit les œuvres réellement visitées. Après un retour, u
 nouveau tirage ouvre une nouvelle branche du parcours. L’historique conserve
 jusqu’à 100 étapes dans la session du navigateur.
 Les flèches de navigation se placent de chaque côté de la fiche sur ordinateur
-et dans une barre en haut sur mobile. La fiche actuelle glisse vers la gauche
+et au-dessus de la fiche sur les écrans étroits. La fiche actuelle glisse vers la gauche
 pour découvrir une autre œuvre et vers la droite pour revenir à la précédente.
 Les deux fiches restent visibles pendant la transition. La préférence système
 de réduction des animations désactive ce mouvement.

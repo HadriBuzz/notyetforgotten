@@ -1,5 +1,5 @@
 /* Both the website and the conversation preview use this application. */
-window.initNYF = function initNYF(catalogue, dictionaries) {
+window.initNYF = function initNYF(catalogue, dictionaries, embeddedDetails) {
   const root = document.getElementById('nyf-design');
   const select = (selector) => root.querySelector(selector);
   const artworks = catalogue.artworks;
@@ -14,8 +14,20 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
   let featuredId = null;
   let lastFeaturedId = null;
   const state = { screen: 'home', history: [], position: -1, language: 'fr', eventId: null, artistId: null };
+  let screenBeforeSupport = 'home';
   const storageKey = 'nyf-visit-v1';
   const dialog = select('[data-lightbox]');
+  const detailsDialog = select('[data-details-dialog]');
+  let detailsRequest = null;
+  const statusLabels = {
+    stolen: 'statusStolen',
+    destroyed: 'statusDestroyed',
+    'probably-destroyed': 'statusProbablyDestroyed',
+    lost: 'statusLost',
+    'historical-disappearance': 'statusHistoricalDisappearance',
+    unknown: 'statusUnknown',
+    found: 'statusFound',
+  };
   let zoomedId = null;
   let zoomOpener = null;
   let cancelWorkTransition = null;
@@ -107,6 +119,17 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
     element.textContent = formatDate(value);
   }
 
+  function artworkStatus(artwork) {
+    if (artwork.statusId === 'destroyed' && artwork.statusCertainty === 'probable') return 'probably-destroyed';
+    return Object.hasOwn(statusLabels, artwork.statusId) ? artwork.statusId : 'unknown';
+  }
+
+  function renderArtworkStatus(element, artwork) {
+    const status = artworkStatus(artwork);
+    element.dataset.status = status;
+    element.textContent = t(statusLabels[status]);
+  }
+
   function setImage(image, artwork) {
     const changed = image.getAttribute('src') !== artwork.image.src;
     if (changed) image.src = artwork.image.src;
@@ -145,7 +168,7 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
     button.setAttribute('aria-label', t('enlargeImage', { title: featured.title }));
     select('[data-featured-archive]').textContent = featured.archive;
     select('[data-featured-artist]').textContent = featured.artist;
-    select('[data-featured-status]').textContent = featured.shortStatus;
+    renderArtworkStatus(select('[data-featured-status]'), featured);
     select('[data-featured-title]').textContent = featured.title;
     select('[data-featured-caption]').textContent = `${featured.date} · ${featured.medium} · ${t('reproduction')}`;
   }
@@ -153,7 +176,10 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
   function renderArtwork(artwork) {
     select('[data-work-artist]').textContent = `${artwork.artist} · ${artwork.date}`;
     select('[data-work-headline]').textContent = artwork.headline;
-    select('[data-work-status]').textContent = artwork.status;
+    renderArtworkStatus(select('[data-work-status]'), artwork);
+    const statusNote = select('[data-work-status-note]');
+    statusNote.textContent = artwork.statusNote || '';
+    statusNote.hidden = !artwork.statusNote;
     select('[data-work-title]').textContent = artwork.title;
     const artist = localize(artists.get(artwork.artistId), 'artists');
     select('[data-work-creator-label]').textContent = artistKind(artist);
@@ -184,10 +210,7 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
     select('[data-work-image-source]').href = artwork.image.sourceUrl;
     const event = localize(events.get(artwork.disappearanceEventId), 'events');
     renderDate(select('[data-work-disappearance-date]'), event.date);
-    const eventLink = select('[data-work-event]');
-    eventLink.textContent = `${event.cause} ↗`;
-    eventLink.dataset.eventId = event.id;
-    eventLink.href = `#event-${event.id}`;
+    select('[data-work-circumstances]').textContent = event.cause;
     const image = select('[data-work-image]');
     if (setImage(image, artwork)) {
       image.hidden = false;
@@ -203,9 +226,78 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
       paragraph.textContent = text;
       return paragraph;
     }));
-    renderSources(select('[data-work-sources]'), artwork.sources);
     select('[data-action="previous"]').disabled = state.position <= 0;
     select('[data-action="random"]').disabled = artworks.length < 2;
+  }
+
+  function appendMarkdownText(element, text) {
+    let position = 0;
+    for (const match of text.matchAll(/\[([^\]\n]+)\]\((https?:\/\/(?:[^()\s]|\([^()\s]*\))+)\)/gi)) {
+      const link = document.createElement('a');
+      link.textContent = match[1];
+      link.href = match[2];
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      element.append(text.slice(position, match.index), link);
+      position = match.index + match[0].length;
+    }
+    element.append(text.slice(position));
+  }
+
+  function renderMarkdown(markdown) {
+    const fragment = document.createDocumentFragment();
+    for (const block of markdown.trim().split(/\n[ \t]*\n/)) {
+      const lines = block.split('\n');
+      if (lines.every((line) => /^[-*] /.test(line))) {
+        const list = document.createElement('ul');
+        for (const line of lines) {
+          const item = document.createElement('li');
+          appendMarkdownText(item, line.slice(2));
+          list.append(item);
+        }
+        fragment.append(list);
+      } else {
+        const heading = lines.length === 1 && /^#{1,6} /.test(block);
+        const element = document.createElement(heading ? 'h3' : 'p');
+        appendMarkdownText(element, heading ? block.replace(/^#+ /, '') : lines.join(' '));
+        fragment.append(element);
+      }
+    }
+    return fragment;
+  }
+
+  async function openDetails(artwork) {
+    const language = state.language;
+    const content = select('[data-details-content]');
+    const feedback = select('[data-details-feedback]');
+    select('[data-details-title]').textContent = artwork.title;
+    const eventLink = select('[data-details-event]');
+    eventLink.dataset.eventId = artwork.disappearanceEventId;
+    eventLink.href = `#event-${artwork.disappearanceEventId}`;
+    content.replaceChildren();
+    feedback.textContent = t('detailsLoading');
+    detailsRequest?.abort();
+    const request = new AbortController();
+    detailsRequest = request;
+    detailsDialog.showModal();
+    try {
+      let markdown = embeddedDetails?.[artwork.id];
+      if (markdown === undefined) {
+        const response = await fetch(`ressources/oeuvres/${encodeURIComponent(artwork.id)}.md`, { signal: request.signal });
+        if (!response.ok || response.headers.get('content-type')?.includes('text/html')) throw new Error('Markdown unavailable');
+        markdown = await response.text();
+      }
+      if (detailsRequest !== request || !detailsDialog.open) return;
+      const [fr, en] = markdown.replaceAll('\r\n', '\n').split(/^<!-- en -->[ \t]*$/m, 2);
+      const useEnglish = language === 'en' && en?.trim();
+      const localizedMarkdown = (useEnglish ? en : fr).trim();
+      if (!localizedMarkdown) throw new Error('Markdown is empty');
+      content.lang = useEnglish ? 'en' : 'fr';
+      content.append(renderMarkdown(localizedMarkdown));
+      feedback.textContent = '';
+    } catch (_) {
+      if (detailsRequest === request && detailsDialog.open) feedback.textContent = t('detailsUnavailable');
+    }
   }
 
   function renderEvent() {
@@ -293,6 +385,9 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
     const languageButton = select('[data-action="language"]');
     languageButton.textContent = state.language === 'fr' ? 'EN' : 'FR';
     languageButton.lang = state.language === 'fr' ? 'en' : 'fr';
+    const supportLink = select('[data-support-link]');
+    if (state.screen === 'support') supportLink.setAttribute('aria-current', 'page');
+    else supportLink.removeAttribute('aria-current');
     root.querySelectorAll('[data-nyf-view]').forEach((view) => { view.hidden = view.dataset.nyfView !== state.screen; });
     if (state.screen === 'home') renderFeatured();
     if (state.screen === 'work') renderArtwork(artwork);
@@ -306,15 +401,16 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
     });
     if (announce) {
       select('[data-nyf-status]').textContent = state.screen === 'work'
-        ? `${artwork.title}, ${artwork.artist}. ${artwork.status}.`
+        ? `${artwork.title}, ${artwork.artist}. ${t(statusLabels[artworkStatus(artwork)])}.`
         : state.screen === 'event' ? localize(events.get(state.eventId), 'events').title
         : state.screen === 'artist' ? localize(artists.get(state.artistId), 'artists').name
-        : state.screen === 'about' ? t('aboutSection') : t('homeSection');
+        : state.screen === 'about' ? t('aboutSection')
+        : state.screen === 'support' ? t('supportProject') : t('homeSection');
     }
   }
 
   function persist() {
-    const snapshot = { ...state, history: [...state.history] };
+    const snapshot = { ...state, screen: state.screen === 'support' ? screenBeforeSupport : state.screen, history: [...state.history] };
     try { sessionStorage.setItem(storageKey, JSON.stringify(snapshot)); } catch (_) { /* Storage may be unavailable in an embedded preview. */ }
     try { localStorage.setItem('nyf-language', state.language); } catch (_) { /* The current language still works in memory. */ }
     if (window.openai && window.openai.setWidgetState) {
@@ -340,6 +436,23 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
     state.artistId = artists.has(snapshot.artistId) ? snapshot.artistId : null;
     if (dictionaries[snapshot.language]) state.language = snapshot.language;
     render();
+  }
+
+  function syncSupportRoute() {
+    if (window.location.hash === '#soutenir') {
+      if (state.screen === 'support') return;
+      cancelWorkTransition?.();
+      cancelPageTransition?.();
+      screenBeforeSupport = state.screen;
+      state.screen = 'support';
+      render(true);
+      select('#nyf-support-title').focus({ preventScroll: true });
+      root.scrollIntoView({ block: 'start', behavior: 'instant' });
+    } else if (state.screen === 'support') {
+      state.screen = screenBeforeSupport;
+      render(true);
+      select('[data-support-link]').focus({ preventScroll: true });
+    }
   }
 
   function visitArtwork(id) {
@@ -539,6 +652,12 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
     cancelWorkTransition?.();
     if (action === 'zoom') { openImage(button.dataset.artworkId, button); return; }
     if (action === 'close-image') { void closeImage(); return; }
+    if (action === 'details') {
+      const artwork = currentArtwork();
+      if (artwork && state.screen === 'work') void openDetails(artwork);
+      return;
+    }
+    if (action === 'event' && detailsDialog.open) detailsDialog.close();
     const previousScreen = state.screen;
     const main = select('main');
     const previousHeight = main.getBoundingClientRect().height;
@@ -570,6 +689,9 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
       case 'open-artwork': visitArtwork(button.dataset.artworkId); break;
       default: return;
     }
+    if (previousScreen === 'support' && state.screen !== previousScreen) {
+      window.history.replaceState(window.history.state, '', window.location.href.split('#')[0]);
+    }
     render(true);
     persist();
     if (state.screen !== previousScreen) select(`[data-nyf-view="${state.screen}"] button:not(:disabled)`)?.focus({ preventScroll: true });
@@ -577,6 +699,11 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
     if (outgoing && (state.screen !== previousScreen || action === 'home')) void revealPage(outgoing, previousHeight);
   });
 
+  detailsDialog.addEventListener('close', () => {
+    if (detailsDialog.open) return;
+    detailsRequest?.abort();
+    detailsRequest = null;
+  });
   dialog.addEventListener('cancel', (event) => { event.preventDefault(); void closeImage(); });
   dialog.addEventListener('close', () => {
     if (dialog.open) return; // Ignore a queued close event if the viewer was reopened.
@@ -635,6 +762,11 @@ window.initNYF = function initNYF(catalogue, dictionaries) {
   root.querySelectorAll('[data-action="visit"], [data-action="language"]').forEach((button) => { button.disabled = false; });
   try { restore(JSON.parse(sessionStorage.getItem(storageKey))); } catch (_) { /* A fresh visit is the default. */ }
   restore(window.openai?.widgetState?.privateContent);
-  window.addEventListener('openai:set_globals', (event) => { restore(event.detail?.globals?.widgetState?.privateContent); });
+  window.addEventListener('openai:set_globals', (event) => {
+    restore(event.detail?.globals?.widgetState?.privateContent);
+    syncSupportRoute();
+  });
+  window.addEventListener('hashchange', syncSupportRoute);
   render();
+  syncSupportRoute();
 };
