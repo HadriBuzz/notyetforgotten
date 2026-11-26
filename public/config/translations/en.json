@@ -1,16 +1,16 @@
 {
   "ui": {
-    "pageTitle": "Not Yet Forgotten (NYF) — Keeping memory alive",
-    "pageDescription": "Discover lost works of art and the stories they have left behind. Keeping memory alive.",
+    "pageTitle": "Not Yet Forgotten (NYF) — Memory: one of the last safeguards against barbarism",
+    "pageDescription": "Discover lost works of art and the stories they have left behind. Memory: one of the last safeguards against barbarism.",
     "brandHome": "Not Yet Forgotten (NYF), home",
     "mainNavigation": "Main navigation",
     "explore": "Explore",
     "about": "The project",
     "switchLanguage": "Passer en français",
-    "tagline": "Keeping memory alive",
+    "tagline": "Memory: one of the last safeguards against barbarism",
     "homeSection": "Gallery entrance",
     "homeTitleFirst": "Sometimes Art disappears.",
-    "homeTitleSecond": "Their memory",
+    "homeTitleSecond": "Its memory",
     "homeTitleLast": "remains.",
     "homeDescriptionFirst": "Stolen, destroyed, lost.",
     "homeDescriptionLast": "Discover lost works of art. Some may resurface, others are lost forever, but all cling to our memories.",
@@ -21,7 +21,6 @@
     "medium": "Medium",
     "collection": "Collection",
     "disappearanceDate": "Date of disappearance",
-    "disappearanceCause": "Disappearance attributed to",
     "historicalSources": "Historical sources",
     "imageSource": "Image source",
     "imageUnavailable": "The reproduction of this artwork is temporarily unavailable.",
@@ -64,14 +63,29 @@
     "artistCountMany": "{count} artworks in this gallery",
     "artistDescription": "This page brings together the artist’s missing works featured in this gallery. The selection may grow as the project develops.",
     "artistOriginDescription": "The maker of this work is unidentified. This grouping reflects its cultural origin rather than the name of an artist.",
-    "artistAttributionDescription": "This grouping preserves the attribution “after”: the works follow models by the named artists and are not presented as having been made directly by them."
+    "artistAttributionDescription": "This grouping preserves the attribution “after”: the works follow models by the named artists and are not presented as having been made directly by them.",
+    "disappearance": "Disappearance",
+    "artworkStatus": "Artwork status",
+    "statusStolen": "Stolen",
+    "statusDestroyed": "Destroyed",
+    "statusProbablyDestroyed": "Probably destroyed",
+    "statusLost": "Lost",
+    "statusHistoricalDisappearance": "Disappeared in historical circumstances",
+    "statusUnknown": "Unknown fate",
+    "statusFound": "Found",
+    "learnMore": "Learn more about the artwork",
+    "closeDetails": "Close details",
+    "detailsLoading": "Loading details…",
+    "detailsUnavailable": "The details are temporarily unavailable.",
+    "seeEvent": "See the event",
+    "supportProject": "Support the project",
+    "supportDescription": "Ways to support the project are in development and will be available on this page soon.",
+    "supportContact": "In the meantime, you can always email us at"
   },
   "artworks": {
     "rembrandt-tempete": {
       "title": "Christ in the Storm on the Sea of Galilee",
       "medium": "Oil on canvas",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "A storm. Then silence.",
       "story": [
@@ -92,8 +106,6 @@
     "vermeer-concert": {
       "title": "The Concert",
       "medium": "Oil on canvas",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "Music left to the imagination.",
       "story": [
@@ -116,8 +128,6 @@
       "title": "Chez Tortoni",
       "date": "Around 1875",
       "medium": "Oil on canvas",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "An unexpected glance in a café.",
       "story": [
@@ -138,8 +148,6 @@
       "title": "The Painter on the Road to Tarascon",
       "medium": "Oil on canvas",
       "collection": "Former collection of the Kaiser-Friedrich-Museum, Magdeburg",
-      "shortStatus": "Missing since 1945",
-      "status": "Missing since 1945, presumed destroyed",
       "archive": "Archive · Magdeburg · 1945",
       "headline": "On the road, a shadow remains.",
       "story": [
@@ -161,8 +169,6 @@
       "title": "A Lady and Gentleman in Black",
       "medium": "Oil on canvas",
       "dimensions": "131.6 × 109 cm",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "Two figures in the half-light.",
       "story": [
@@ -183,8 +189,6 @@
       "title": "Portrait of the Artist as a Young Man",
       "medium": "Etching",
       "dimensions": "4.5 × 5 cm",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "A face in just a few centimetres.",
       "story": [
@@ -206,8 +210,6 @@
       "title": "Landscape with an Obelisk",
       "medium": "Oil on oak panel",
       "dimensions": "54.5 × 71 cm",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "Light on a monument",
       "story": [
@@ -228,8 +230,6 @@
       "title": "Leaving the Paddock",
       "medium": "Watercolour and pencil on paper",
       "dimensions": "10.5 × 16 cm",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "The moment before the track.",
       "story": [
@@ -251,8 +251,6 @@
       "title": "Procession on a Road near Florence",
       "medium": "Pencil and sepia wash on paper",
       "dimensions": "15.6 × 20.6 cm",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "Figures following the road.",
       "story": [
@@ -273,8 +271,6 @@
       "title": "Three Mounted Jockeys",
       "medium": "Black ink, washes and oil pigments on brown paper",
       "dimensions": "30.5 × 24 cm",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "Movement taking shape.",
       "story": [
@@ -296,8 +292,6 @@
       "title": "Study for the Programme de la soirée artistique du 15 juin 1884 (Galerie Ponsin)",
       "medium": "Black chalk on paper",
       "dimensions": "24.6 × 31.4 cm",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "An evening sketched on paper.",
       "story": [
@@ -318,8 +312,6 @@
       "title": "Study for the Programme de la soirée artistique du 15 juin 1884 (Galerie Ponsin)",
       "medium": "Black chalk on paper",
       "dimensions": "26.6 × 37.6 cm",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "The same project, another sheet.",
       "story": [
@@ -340,8 +332,6 @@
       "title": "Gu",
       "medium": "Bronze",
       "dimensions": "26.5 × 15.6 cm",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "An ancient vessel, a recent absence.",
       "story": [
@@ -364,8 +354,6 @@
       "title": "Eagle Finial",
       "medium": "Gilded bronze",
       "dimensions": "Height: 25.4 cm",
-      "shortStatus": "Stolen in 1990",
-      "status": "Stolen on 18 March 1990",
       "archive": "Archive · Boston · 18 March 1990",
       "headline": "The emblem detached from its flag.",
       "story": [
@@ -388,8 +376,6 @@
       "medium": "Pastel on paper",
       "dimensions": "31 × 48.5 cm",
       "collection": "Triton Collection · on loan to the Kunsthal Rotterdam in 2012",
-      "shortStatus": "Stolen in 2012",
-      "status": "Stolen on 16 October 2012 — fate uncertain",
       "archive": "Archive · Rotterdam · 16 October 2012",
       "headline": "The bridge dissolves into mist.",
       "story": [
@@ -405,15 +391,14 @@
         "Spanish Ministry of Culture — medium and dimensions (2010)",
         "The Courtauld — Monet and his London views",
         "Kunsthal statement on the theft, reproduced by ArtsJournal"
-      ]
+      ],
+      "statusNote": "Fate uncertain"
     },
     "monet-waterloo-bridge": {
       "title": "Waterloo Bridge, London",
       "medium": "Pastel on paper",
       "dimensions": "30.5 × 48 cm",
       "collection": "Triton Collection · on loan to the Kunsthal Rotterdam in 2012",
-      "shortStatus": "Stolen in 2012",
-      "status": "Stolen on 16 October 2012 — fate uncertain",
       "archive": "Archive · Rotterdam · 16 October 2012",
       "headline": "Blue arches in the light.",
       "story": [
@@ -429,13 +414,14 @@
         "Spanish Ministry of Culture — medium and dimensions (2010)",
         "The Courtauld — Monet and his London views",
         "Kunsthal statement on the theft, reproduced by ArtsJournal"
-      ]
+      ],
+      "statusNote": "Fate uncertain"
     }
   },
   "events": {
     "gardner-1990": {
       "title": "The Isabella Stewart Gardner Museum theft",
-      "cause": "Museum theft — Boston, 1990",
+      "cause": "Theft at the Isabella Stewart Gardner Museum",
       "location": "Boston, United States",
       "description": "On 18 March 1990, two men disguised as police officers stole thirteen pieces from the Isabella Stewart Gardner Museum in Boston: five paintings, five works on paper by Degas, a Rembrandt etching and two bronze objects. All thirteen are gathered here.",
       "sourceLabels": [
@@ -444,7 +430,7 @@
     },
     "tarascon-1945": {
       "title": "Disappearance during the Second World War",
-      "cause": "Wartime loss — presumed destroyed",
+      "cause": "Disappearance during the Second World War",
       "location": "Germany · Magdeburg museum collection",
       "description": "The painting was moved to a salt mine for safekeeping during the Second World War. It has been missing since 1945 and is presumed destroyed. The exact circumstances remain uncertain; this record does not imply that other works disappeared in the same incident.",
       "sourceLabels": [
@@ -453,7 +439,7 @@
     },
     "kunsthal-2012": {
       "title": "The Kunsthal Rotterdam theft",
-      "cause": "Museum theft — Rotterdam, 2012",
+      "cause": "Theft at the Kunsthal Rotterdam",
       "location": "Rotterdam, Netherlands",
       "description": "During the night of 15–16 October 2012, seven works from the Triton Collection were stolen from the Kunsthal in Rotterdam, where they were on loan for the exhibition “Avant-gardes”. Two Monet pastels disappeared alongside works by Picasso, Matisse, Gauguin, Meyer de Haan and Lucian Freud. Both Monets are featured here. The investigation led to Romania. A suspect’s mother said she had burned the works, then withdrew her statement. Paint traces and nails were found in the ashes of her stove, without identifying which works had been destroyed. The fate of each pastel remains uncertain.",
       "sourceLabels": [
