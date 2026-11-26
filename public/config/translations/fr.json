@@ -11,7 +11,7 @@
     "homeSection": "Entrée de la galerie",
     "homeTitleFirst": "L’art parfois disparaît.",
     "homeTitleSecond": "Reste",
-    "homeTitleLast": "Leur mémoire.",
+    "homeTitleLast": "Sa mémoire.",
     "homeDescriptionFirst": "Dérobées, détruites, égarées.",
     "homeDescriptionLast": "Partez à la rencontre des œuvres disparues. Certaines ressurgiront peut-être, d’autres sont perdues à jamais, mais toutes s’accrochent à nos mémoires.",
     "startVisit": "Commencer la visite",
@@ -79,6 +79,7 @@
     "detailsUnavailable": "Les détails sont momentanément indisponibles.",
     "seeEvent": "Voir l’événement",
     "supportProject": "Soutenir le projet",
-    "supportDescription": "Les options pour soutenir le projet sont en cours de création. Elles seront bientôt disponibles sur cette page."
+    "supportDescription": "Les options pour soutenir le projet sont en cours de création. Elles seront bientôt disponibles sur cette page.",
+    "supportContact": "En attendant, vous pouvez toujours nous envoyer un mail à"
   }
 }

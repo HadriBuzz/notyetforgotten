@@ -10,7 +10,7 @@
     "tagline": "Memory: one of the last safeguards against barbarism",
     "homeSection": "Gallery entrance",
     "homeTitleFirst": "Sometimes Art disappears.",
-    "homeTitleSecond": "Their memory",
+    "homeTitleSecond": "Its memory",
     "homeTitleLast": "remains.",
     "homeDescriptionFirst": "Stolen, destroyed, lost.",
     "homeDescriptionLast": "Discover lost works of art. Some may resurface, others are lost forever, but all cling to our memories.",
@@ -79,7 +79,8 @@
     "detailsUnavailable": "The details are temporarily unavailable.",
     "seeEvent": "See the event",
     "supportProject": "Support the project",
-    "supportDescription": "Ways to support the project are in development and will be available on this page soon."
+    "supportDescription": "Ways to support the project are in development and will be available on this page soon.",
+    "supportContact": "In the meantime, you can always email us at"
   },
   "artworks": {
     "rembrandt-tempete": {
